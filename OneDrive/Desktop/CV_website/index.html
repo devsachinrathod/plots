@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachin Rathod | Full Stack Developer</title>
+    <link rel="icon" type="image/png" href="./Profile_pic.png">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+    .skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #21262d;
+  color: #c9d1d9;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.skills span:hover {
+  background: #1f6feb;
+  color: #fff;
+  border-color: #1f6feb;
+}
+
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .profile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #161b22;
+      border-radius: 12px;
+    }
+
+    .profile img {
+      width: 140px;
+      padding: 10px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 0.3px solid #fafafa32;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    h1 span {
+      background: #21262d;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      margin-left: 8px;
+      color: #c9d1d9;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #8b949e;
+    }
+
+    .location {
+      font-size: 14px;
+      color: #8b949e;
+      margin-bottom: 12px;
+    }
+
+    .icons a {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 18px;
+      color: #c9d1d9;
+      text-decoration: none;
+      border: 1px solid #30363d;
+      padding: 6px 8px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .icons a:hover {
+      background: #1f6feb;
+      color: #fff;
+      border-color: #1f6feb;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #8b949e;
+    }
+
+    /* Contribution Graph */
+    .contributions {
+      background: #161b22;
+      border: 1px solid #30363d51;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+
+    .contributions .grid {
+      display: grid;
+      grid-template-columns: repeat(52, 12px);
+      gap: 3px;
+    }
+
+    .contributions .grid div {
+      width: 12px;
+      height: 12px;
+      background: #21262d;
+      border-radius: 2px;
+    }
+
+    .contributions p {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #8b949e;
+    }
+
+    /* Grid Card Layout (Projects + Experience) */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #23556b12;
+      border: 1px solid #c2c2c24e;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #ffffff;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #c9d1d9;
+      margin-bottom: 10px;
+    }
+
+    .tags span {
+      display: inline-block;
+      background: #21262d;
+      color: #c9d1d9;
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 5px;
+      margin: 3px 3px 0 0;
+    }
+
+    .dot {
+      color: #3fb950;
+      font-size: 20px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Profile -->
+    <div class="profile">
+      <div>
+        <h1>Sachin Rathod <span>Hire Me!</span></h1>
+        <p class="subtitle">Full Stack Developer and DevOps Engineer focused on learning through experimentation and product development.</p>
+        <p class="location"><i class="bi bi-geo-alt"></i> Pune, Maharashtra</p>
+        <div class="icons">
+          <a href="mailto:sr5631080@gmail.com"><i class="bi bi-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/~rathod-s-a76a53230"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/devsachinrathod"><i class="bi bi-github"></i></a>
+          <a href="https://leetcode.com/u/9356796654/"><i class="bi bi-code-slash"></i></a>
+        </div>
+      </div>
+      <img src="./Profile_pic.png" alt="Sachin Profile">
+    </div>
+
+    <!-- Contributions -->
+    <div class="contributions">
+      <div class="grid">
+        <script>
+          const shades = ["#161b22","#003d00","#005700","#007a00","#00a300"];
+          for (let i = 0; i < 364; i++) {
+            let color = shades[Math.floor(Math.random() * shades.length)];
+            document.write(`<div style="background:${color}"></div>`);
+          }
+        </script>
+      </div>
+      <p>1176 contributions in the last year</p>
+    </div>
+
+    <!-- About -->
+    <div class="section">
+      <h2>About Me</h2>
+      <p>Hey there! My name is Rathore Sachin I hail from a small village in Maharastra. I’ve always been fascinated by technology, which led me to develop a strong passion for coding and database management. and I’m currently working as a Full Stack Intern at Digital Nexus AI.</p>
+    </div>
+
+    <!-- Experience -->
+    <div class="section">
+      <h2>Experience</h2>
+      <div class="grid">
+          <div class="card">
+          <h3>Full-stack Developer intern - Digital Nexus Ai <span class="dot">•</span></h3>
+          <p><em>05/2024 – Present | Bengluru, Karnaaka</em></p>
+          <p>Working as full stack Developer Intern.</p>
+          <div class="tags">
+            <span>React.js</span> <span>Node.js</span> <span>Express</span> <span>MongoDB</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>MERN Developer Intern - Zidio Development <span class="dot">•</span></h3>
+          <p><em>05/2024 – Present | Mumbai, Maharashtra</em></p>
+          <p>Worked on full stack development using React.js, Node.js, Express, and MongoDB.</p>
+          <div class="tags">
+            <span>React.js</span> <span>Node.js</span> <span>Express</span> <span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>MERN Developer Intern - Nullclass Learning</h3>
+          <p><em>Remote | 2024</em></p>
+          <p>Hands-on experience in designing and implementing responsive websites.</p>
+          <div class="tags">
+            <span>Frontend</span> <span>Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Associate - 100XDEV</h3>
+          <p><em>07/2024 – 01/2025 | Remote</em></p>
+          <p>Developed industry-level projects, tackled complex challenges, and showcased problem-solving abilities.</p>
+          <div class="tags">
+            <span>Projects</span> <span>Collaboration</span> <span>Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Skills -->
+<div class="section">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>TypeScript</span>
+    <span>GoLang</span>
+    <span>Next.js</span>
+    <span>Express/NestJS</span>
+    <span>SQL/NoSQL/Prisma</span>
+    <span>Helm</span>
+    <span>DevOps/Cloud/Kubernetes</span>
+    <span>CI/CD</span>
+    <span>Touch Typing (130 WPM)</span>
+    <span>Prometheus/Grafana</span>
+    <span>Microservices</span>
+    <span>Backend</span>
+    <span>Networking/Infrastructure</span>
+    <span>GitOps</span>
+    <span>Shell Scripting</span>
+  </div>
+</div>
+
+
+    <!-- Projects -->
+    <div class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Kubecorner <span class="dot">•</span></h3>
+          <p>Kubernetes Manifest repository for all of my projects which is connected to ArgoCD for CI/CD.</p>
+          <div class="tags">
+            <span>ArgoCD</span> <span>Kubernetes</span> <span>DevOps</span> <span>Monitoring</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Remote Execution Engine <span class="dot">•</span></h3>
+          <p>Developing a highly scalable remote code execution and testing engine with HA Kubernetes.</p>
+          <div class="tags">
+            <span>Language Runtimes</span> <span>Kubernetes</span> <span>Shell Scripting</span> <span>Microservices</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Centralised Server for College Lab</h3>
+          <p>Deployed persistent Oracle/PostgreSQL Databases using Docker-Ubuntu-rack-server.</p>
+          <div class="tags">
+            <span>Docker</span> <span>Portainer</span> <span>OracleSQL/PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Homelab</h3>
+          <p>Building my own homelab where I host and tinker with services like Databases, media servers and DNS.</p>
+          <div class="tags">
+            <span>Kubernetes</span> <span>Remote Access</span> <span>DNS</span> <span>Terraform</span> <span>IAAC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievements -->
+    <!-- <div class="section">
+      <h2>Key Achievements</h2>
+      <ul>
+        <li>Led team to cut development time by 20% through agile methodologies.</li>
+        <li>Built web app that increased user engagement by 30% within three months.</li>
+        <li>Improved code efficiency by 15% using optimized algorithms and best practices.</li>
+        <li>Completed 5 projects remotely, enhancing collaboration and delivery timelines.</li>
+      </ul>
+    </div> -->
+
+    <!-- Education -->
+    <div class="section">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Bachelor's Degree</h3>
+          <p><em>Mahatma Gandhi Mission’s College of Engineering (2023 – Present)</em></p>
+        </div>
+        <div class="card">
+          <h3>HSC(mathematics) </h3>
+          <p><em>
+Maharashtra State Board of Secondary and Higher Secondary Education (MSBSHSE)</em></p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © 2025 Sachin Rathod | Built with HTML, CSS, and JavaScript
+    </footer>
+  </div>
+</body>
+</html>
