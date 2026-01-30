@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Raleway:wght@100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./contact-styles.css" />
+</head>
+
+<body>
+  <header class="header wrapper">
+    <div class="navigation">
+      <div class="navigation__logo-container">
+        <img src="./images/dna-logo-navigation.svg" alt="Logo" class="navigation__logo-image" />
+        <a href="index.html" class="navigation__logo-text">
+          <p class="navigation__logo-title">DigitalNexusAI</p>
+        </a>
+      </div>
+      <div class="navigation__nav-container">
+        <nav class="navigation__nav">
+          <ul class="navigation__nav-list">
+            <li class="navigation__nav-item">
+              <a class="navigation__nav-link" href="./index.html#product-showcase">Products</a>
+            </li>
+            <li class="navigation__nav-item">
+              <a class="navigation__nav-link" href="./index.html#header-training">Services</a>
+            </li>
+            <li class="navigation__nav-item">
+              <a class="navigation__nav-link" href="./coursepage.html">Courses</a>
+            </li>
+            <li class="navigation__nav-item">
+              <a class="navigation__nav-link" href="./index.html#meet-dna">About</a>
+            </li>
+            <li class="navigation__nav-item"><a class="navigation__nav-link"
+                href="./internshipapplicationpage.html">Careers</a>
+            </li>
+            <li class="navigation__nav-item">
+              <a class="navigation__nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="navigation__btn-container">
+        <a href="./login.html" class="navigation__link">Login</a>
+        <a href="./register.html"><button class="navigation__button navigation__button-trial">
+            Sign Up
+          </button></a>
+      </div>
+    </div>
+  </header>
+  <div id="contact-us">
+    <div class="container">
+      <div class="contact-left">
+        <h1>Contact us!</h1>
+        <p>
+          Contact us about anything related to our company or services. We'll
+          do our best to get back to you as soon as possible.
+        </p>
+        <div class="contact-info">
+          <div class="info-item">
+            <!-- <h2>
+                            Address:
+                        </h2> -->
+            <p><b>United States:</b> 205 Tenth St, Jersey City, NJ 07302</p>
+            <p><b>India:</b> No. 25, 1st Main, NR Colony, Bangalore</p>
+            <p><b>Canada: </b>6215 Lawrence Avenue East Toronto M1C5G4</p>
+          </div>
+          <div class="info-item">
+            <p><b>Phone:</b> +1 (408) 661-0258</p>
+          </div>
+          <div class="info-item">
+            <p><b>Email:</b> contact@digitalnexusai.com</p>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.578892233862!2d77.56618307409506!3d12.934765087377228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae158f21483239%3A0x97f40833e34bff70!2s25%2C%201st%20Main%20Rd%2C%20NR%20Colony%2C%20Basavanagudi%2C%20Bengaluru%2C%20Karnataka%20560004!5e0!3m2!1sen!2sin!4v1723537977264!5m2!1sen!2sin"
+          width="100%" height="300" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <form class="contact-form" action="contact" method="POST" id="contact-us">
+        <label>Enter Full Name *</label>
+        <input type="text" name="fullName" required />
+        <label>Phone Number *</label>
+        <div class="phone-input">
+          <select name="countryCode" required>
+            <option value="+1">Canada (+1)</option>
+            <option value="+1">USA (+1)</option>
+            <option value="+49">Germany (+49)</option>
+            <option value="+39">Italy (+39)</option>
+            <option value="+81">Japan (+81)</option>
+            <option value="+61">Australia (+61)</option>
+          </select>
+          <input type="text" name="phoneNumber" required pattern="[0-9]+" />
+        </div>
+        <label>Enter Email *</label>
+        <input type="email" name="email" required />
+        <label>Company</label>
+        <input type="text" name="company" />
+        <label>Subject *</label>
+        <input type="text" name="subject" required />
+        <label>Question *</label>
+        <textarea name="question" required style="resize: none; height: 8rem;"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+
+
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__top wrapper">
+      <div class="footer__container">
+        <h3 class="footer__title-main">DigitalNexusAI</h3>
+        <p class="footer__text">
+          Remember, at Digital Nexus AI, we don’t just create; we innovate.
+        </p>
+        <ul class="footer__list footer__list-reversed">
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.facebook.com/people/Digitalnexusaidotcom/61562625252000/"
+              target="_blank"><img class="footer__social-network-image" src="./images/social-network-facebook.svg"
+                alt="Facebook" /></a>
+          </li>
+          <!-- <li class="footer__item"><a class="footer__link" href="#"><img class="footer__social-network-image" src="./images/social-network-x.svg" alt="X"></a></li> -->
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.instagram.com/digitalnexusaidotcom/" target="_blank"><img
+                class="footer__social-network-image" src="./images/social-network-instagram.svg" alt="Instagram" /></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.linkedin.com/company/digital-nexus-ai-com/" target="_blank"><img
+                class="footer__social-network-image" src="./images/social-network-linkedin.svg" alt="Linkedin" /></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.youtube.com/@digitalnexusai/" target="_blank"><img
+                class="footer__social-network-image-youtube" src="./images/social-network-youtube.svg"
+                alt="Youtube" /></a>
+          </li>
+        </ul>
+        <div class="footer__container-contact">
+          <h4 class="footer__container-title">Contact</h4>
+          <p class="footer__container-text">
+            Email:
+            <span class="footer__container-text-span">contact@digitalnexusai.com</span>
+          </p>
+          <p class="footer__container-text">
+            Phone:
+            <span class="footer__container-text-span">+1 (408) 661-0258</span>
+          </p>
+          <p class="footer__container-text">
+            Address:
+            <span class="footer__container-text-span">No. 25, 1st Main, NR Colony, Bangalore
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="footer__container">
+        <h4 class="footer__title footer__title-center">The Company</h4>
+        <ul class="footer__list">
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./index.html#product-showcase">Products</a>
+          </li>
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./index.html#header-training">Services</a>
+          </li>
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./coursepage.html">Courses</a>
+          </li>
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./index.html#meet-dna">About Us</a>
+          </li>
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__container">
+        <h4 class="footer__title footer__title-center">Legal Information</h4>
+        <ul class="footer__list">
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./terms.html">Terms of Service</a>
+          </li>
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./privacy.html">Privacy Policy</a>
+          </li>
+          <!-- <li class="footer__item footer__item-list"><a class="footer__link" href="#">Cookie Policy</a></li> -->
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./refund.html">Refund Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__container">
+        <h3 class="footer__title-main footer__title-main-newslatter">Newsletter</h3>
+        <p class="footer__text footer__text-newslatter">
+          Stay up-to-date with DNAs latest news and service offerings.
+        </p>
+        <div class="footer__form-group">
+          <input type="text" class="footer__input" placeholder="Enter your Email..." />
+          <button class="footer__button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__bottom-text">
+        © Copyright 2024 DigitalNexusAI. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>

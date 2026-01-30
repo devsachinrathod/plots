@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="./Logo/DNA Logo symbol.svg" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./coursepage-style.css" />
+  <script defer src="./script-coursepage"></script>
+  <script src="./coursepage.js" defer></script>
+
+  <title>Digital Nexus AI</title>
+  <style>
+    /* mobile styles */
+    @media (max-width: 768px) {
+      .navigation__hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 28px;
+        height: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        align-items: start;
+        top: 44px;
+        right: 4px;
+        z-index: 1001;
+        position: relative;
+        margin-left: 30px;
+      }
+
+      .head-coursepage {
+        background-color: transparent;
+      }
+
+      .navigation__hamburger span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: transform 0.25s, opacity 0.25s;
+      }
+
+      .navigation__hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(7px);
+      }
+
+      .navigation__hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .navigation__hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-7px);
+      }
+
+      /* hidden by default, show when .show is added */
+      .coursepage-nav {
+        flex-direction: column;
+        width: 100%;
+        color: floralwhite;
+        background-color: white;
+        padding: 16px;
+        gap: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        display: none;
+      }
+      
+
+      .coursepage-nav.show {
+        display: flex !important;
+      }
+
+      .coursepage-logo span {
+        color: #fff;
+      }
+
+      .coursepage-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <button class="navigation__hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <header class="head-coursepage">
+    <div class="coursepage-nav-container">
+      <a href="./index.html" class="coursepage-logo-link">
+        <div class="coursepage-logo"><span>DigitalNexusAI</span></div>
+      </a>
+      <nav class="coursepage-nav" id="nav-container">
+        <ul>
+          <button class="explore-dropdown">
+            Explore
+            <div class="dropdown-content">
+              <li><a href="#course-page" onclick="dataScience()">Data Science</a></li>
+              <li><a href="#course-page" onclick="generative()">Generative AI</a></li>
+              <li><a href="#course-page" onclick="analytics()">Analytics</a></li>
+              <li><a href="#course-page" onclick="programming()">Programming</a></li>
+              <li><a href="./contact-admissions.html">Stock Market/Trading</a></li>
+            </div>
+          </button>
+          <!-- <li><a href="#">Scolarship</a></li> -->
+          <li><a href="./contact-admissions.html">Teach on DNA</a></li>
+          <li><a href="./index.html#meet-dna">About Us</a></li>
+        </ul>
+        <ul>
+          <li><a class="coursepage-login-btn" href="./login.html">Login</a></li>
+          <li>
+            <a class="coursepage-register" href="./register.html">Register</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--become a certified data scientist-->
+  <section class="become-a-certified-data-scientist-upper-section">
+    <div class="become-a-certified-data-scientist-section">
+      <div class="become-a-certified-data-scientist-div">
+        <div class="rating-div">
+          <div class="rating-stars">
+            <img src="./images/star.svg" />
+            <img src="./images/star.svg" />
+            <img src="./images/star.svg" />
+            <img src="./images/star.svg" />
+            <img src="./images/star.svg" />
+          </div>
+          <p>4.7 (35+ reviews)</p>
+        </div>
+        <h1 class="become-h1">
+          Become a Certified Data Scientist with Our Training Program
+        </h1>
+        <ul class="check-items-ul">
+          <li>Become expert in ML, Python, Data science</li>
+          <li>Hands on experience in Neural Networks, NLP, Gen AI, Computer vision</li>
+          <li>No need for prior knowledge in AI, ML, Python etc.</li>
+        </ul>
+        <div class="action-buttons-div">
+          <a class="btn-apply-now" href="./cooursedetailspage-CertDS.html">Enroll Now</a>
+          <!-- <a class="btn-learn-more" href="#">Learn More</a> -->
+        </div>
+      </div>
+      <img class="course-page-laptopguyimage" src="./images/laptopguy.jpg" />
+    </div>
+  </section>
+  <!--end of become a certified data scientist-->
+  <section class="carousel-section" id="carousel-section">
+    <h2 class="carousel-title">Our popular courses</h2>
+    <div class="carousel-box">
+      <div class="carousel-container">
+        <div class="carousel-body">
+          <div class="carousel">
+            <a href="./cooursedetailspage-Python.html" class="carousel-card-box">
+              <div class="card">
+                <div class="card-image card-image-1"></div>
+                <div class="card-body">
+                  <div class="card-text">
+                    <h2 class="card-title">Python Programming</h2>
+                    <p class="card-author">Learn Python programming, Control Flow,</br> Data structures,
+                      Pandas, File handling</p>
+                  </div>
+                  <div class="card-review">
+                    <div class="card-stars">
+                      &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </div>
+                    <div class="card-reviews">(+4.7 k reviews)</div>
+                  </div>
+                  <div class="card-description">
+                    <!-- <div class="card-lesson">
+                      <img src="./images/Future.svg" style="width: 25px; height: 25px" alt="lessons icon" />
+                      <p>25 lessons</p>
+                    </div> -->
+                    <div class="card-duration">
+                      <img src="./images/Literature.svg" style="width: 25px; height: 25px" alt="duration icon" />
+                      <p>8 Weeks</p>
+                    </div>
+                    <div class="card-price">
+                      <p>&#8377;19, 999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./cooursedetailspage-CertDS.html" class="carousel-card-box">
+              <div class="card">
+                <div class="card-image card-image-2"></div>
+                <div class="card-body">
+                  <div class="card-text">
+                    <h2 class="card-title">Certified Data Scientist</h2>
+                    <p class="card-author">Learn Python, Data Science Foundation, ML, Deep Learning,<br>
+                      Computer Vision, NLP, Gen AI, VS Code</p>
+                  </div>
+                  <div class="card-review">
+                    <div class="card-stars">
+                      &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </div>
+                    <div class="card-reviews">(+4.5 k reviews)</div>
+                  </div>
+                  <div class="card-description">
+                    <!-- <div class="card-lesson">
+                      <img src="./images/Future.svg" style="width: 25px; height: 25px" alt="lessons icon" />
+                      <p>25 lessons</p>
+                    </div> -->
+                    <div class="card-duration">
+                      <img src="./images/Literature.svg" style="width: 25px; height: 25px" alt="duration icon" />
+                      <p>8 Weeks</p>
+                    </div>
+                    <div class="card-price">
+                      <p>&#8377;1,75,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./cooursedetailspage-GenAI.html" class="carousel-card-box">
+              <div class="card">
+                <div class="card-image card-image-3"></div>
+                <div class="card-body">
+                  <div class="card-text">
+                    <h2 class="card-title">Generative AI Fundamentals</h2>
+                    <p class="card-author">Learn Neural Networks, Train Models,<br> Keras,
+                      TensorFlow</p>
+                  </div>
+                  <div class="card-review">
+                    <div class="card-stars">
+                      &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </div>
+                    <div class="card-reviews">(+4.5k reviews)</div>
+                  </div>
+                  <div class="card-description">
+                    <!-- <div class="card-lesson">
+                      <img src="./images/Future.svg" style="width: 25px; height: 25px" alt="lessons icon" />
+                      <p>25 lessons</p>
+                    </div> -->
+                    <div class="card-duration">
+                      <img src="./images/Literature.svg" style="width: 25px; height: 25px" alt="duration icon" />
+                      <p>8 Weeks</p>
+                    </div>
+                    <div class="card-price">
+                      <p>&#8377;45,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./cooursedetailspage-Angular.html" class="carousel-card-box">
+              <div class="card">
+                <div class="card-image card-image-4"></div>
+                <div class="card-body">
+                  <div class="card-text">
+                    <h2 class="card-title">Become Angular 18 Expert</h2>
+                    <p class="card-author">Learn Angular Fundamentals, Pipes,<br> Testing & Debugging, Deployment, API
+                      Integration</p>
+                  </div>
+                  <div class="card-review">
+                    <div class="card-stars">
+                      &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </div>
+                    <div class="card-reviews">(+4.5k reviews)</div>
+                  </div>
+                  <div class="card-description">
+                    <!-- <div class="card-lesson">
+                      <img src="./images/Future.svg" style="width: 25px; height: 25px" alt="lessons icon" />
+                      <p>25 lessons</p>
+                    </div> -->
+                    <div class="card-duration">
+                      <img src="./images/Literature.svg" style="width: 25px; height: 25px" alt="duration icon" />
+                      <p>6 Weeks</p>
+                    </div>
+                    <div class="card-price">
+                      <p>&#8377;1,95,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./contact-admissions.html" class="carousel-card-box">
+              <div class="card">
+                <div class="card-image card-image-2"></div>
+                <div class="card-body">
+                  <div class="card-text">
+                    <h2 class="card-title">Machine Learning for Beginners</h2>
+                    <p class="card-author">Learn Python programming, Machine Learning<br>
+                      algorithms, Scikit-learn, model evaluation and validation</p>
+                  </div>
+                  <div class="card-review">
+                    <div class="card-stars">
+                      &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </div>
+                    <div class="card-reviews">(+4.6k reviews)</div>
+                  </div>
+                  <div class="card-description">
+                    <!-- <div class="card-lesson">
+                      <img src="./images/Future.svg" style="width: 25px; height: 25px" alt="lessons icon" />
+                      <p>25 lessons</p>
+                    </div> -->
+                    <div class="card-duration">
+                      <img src="./images/Literature.svg" style="width: 25px; height: 25px" alt="duration icon" />
+                      <p>12 Weeks</p>
+                    </div>
+                    <div class="card-price">
+                      <p>&#8377;29,999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./contact-admissions.html" class="carousel-card-box">
+              <div class="card">
+                <div class="card-image card-image-1"></div>
+                <div class="card-body">
+                  <div class="card-text">
+                    <h2 class="card-title">Deep Learning</h2>
+                    <p class="card-author">Learn Neural Networks, Deep Learning Frameworks,<br>
+                      Computer vision, NLP</p>
+                  </div>
+                  <div class="card-review">
+                    <div class="card-stars">
+                      &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </div>
+                    <div class="card-reviews">(+4.5k reviews)</div>
+                  </div>
+                  <div class="card-description">
+                    <!-- <div class="card-lesson">
+                      <img src="./images/Future.svg" style="width: 25px; height: 25px" alt="lessons icon" />
+                      <p>25 lessons</p>
+                    </div> -->
+                    <div class="card-duration">
+                      <img src="./images/Literature.svg" style="width: 25px; height: 25px" alt="duration icon" />
+                      <p>12 Weeks</p>
+                    </div>
+                    <div class="card-price">
+                      <p>&#8377;39,999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./contact-admissions.html" class="carousel-card-box">
+              <div class="card">
+                <div class="card-image card-image-1"></div>
+                <div class="card-body">
+                  <div class="card-text">
+                    <h2 class="card-title">Data Science Foundations</h2>
+                    <p class="card-author">- Learn Statistical concepts, descriptive statistics,<br>
+                      inferential statistics</p>
+                  </div>
+                  <div class="card-review">
+                    <div class="card-stars">
+                      &#9733;&#9733;&#9733;&#9733;&#9733;
+                    </div>
+                    <div class="card-reviews">(+4.3k reviews)</div>
+                  </div>
+                  <div class="card-description">
+                    <!-- <div class="card-lesson">
+                      <img src="./images/Future.svg" style="width: 25px; height: 25px" alt="lessons icon" />
+                      <p>25 lessons</p>
+                    </div> -->
+                    <div class="card-duration">
+                      <img src="./images/Literature.svg" style="width: 25px; height: 25px" alt="duration icon" />
+                      <p>6 Weeks</p>
+                    </div>
+                    <div class="card-price">
+                      <p>&#8377;19,999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control left">
+        <img src="./images/Forward.svg" style="width: 60px; height: 60px" alt="left" />
+      </button>
+      <button class="carousel-control right">
+        <img src="./images/Forward-right.svg" style="width: 60px; height: 60px" alt="right" />
+      </button>
+      <!-- <div class="carousel-dots">
+            </div> -->
+    </div>
+  </section>
+
+  <!-- ExploreCourse start -->
+
+  <div class="course-page" id="course-page">
+    <div class="head-line">
+      <h2>Explore courses by categories</h2>
+    </div>
+    <center class="course-center">
+      <div class="course-container">
+        <div class="button-container">
+          <button type="button" id="all" class="button">All</button>
+          <button type="button" id="data-science" class="button">Data Science</button>
+          <button type="button" id="generative-ai" class="button">Generative AI</button>
+          <button type="button" id="analytics" class="button">Analytics</button>
+          <button type="button" id="programming" class="button">Programming</button>
+        </div>
+        <div class="card-container">
+          <div class="cards" id="all-card">
+            <a href="./cooursedetailspage-CertDS.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/data-science.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Certified Data Scientist</p>
+                    <p>Learn Python, Data Science Foundation, ML, Deep Learning,
+                      Computer Vision, NLP, Gen AI, VS Code</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.5k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>8 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px"> -->
+                      <!-- <p>30h 30m</p> -->
+                      <p class="fee">&#8377;1,75,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./cooursedetailspage-Python.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/python-programming.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Python Programming</p>
+                    <p>Learn Python programming, Control Flow, Data structures,
+                      Pandas, File handling</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.7k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>8 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>30h 30m</p> -->
+                      <p class="fee">&#8377;19,999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./cooursedetailspage-GenAI.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/generative-ai.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Generative AI Fundamentals</p>
+                    <p>Learn Neural Networks, Train Models, Keras,
+                      TensorFlow</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.5k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>8 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>30h 30m</p> -->
+                      <p class="fee">&#8377;45,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cards" id="data-science-card">
+            <a href="./cooursedetailspage-CertDS.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/data-science.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Certified Data Scientist</p>
+                    <p>Learn Python, Data Science Foundation, ML, Deep Learning,
+                      Computer Vision, NLP, Gen AI, VS Code</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.5k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>8 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px"> -->
+                      <!-- <p>30h 30m</p> -->
+                      <p class="fee">&#8377;1,75,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./contact-admissions.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/big-data-insights.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Data Science Foundations</p>
+                    <p>Learn Statistical concepts, descriptive statistics,
+                      inferential statistics</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.3k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>6 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>30h 30m</p> -->
+                      <p class="fee">&#8377;19,999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./contact-admissions.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/data-visulization.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Machine Learning for Beginners</p>
+                    <p>Learn Python programming, Machine Learning
+                      algorithms, Scikit-learn, model evaluation and validation</p>
+                  </div>
+                  <div class="rating" style="margin-top: 5px;">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.6k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration" style="margin-top: 5px;">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>12 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>15h 30m</p> -->
+                      <p class="fee">&#8377;29,999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cards" id="generative-ai-card">
+            <a href="./cooursedetailspage-GenAI.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/generative-ai.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Generative AI Fundamentals</p>
+                    <p>Learn Neural Networks, Train Models, Keras,
+                      TensorFlow</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.5k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>8 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>30h 30m</p> -->
+                      <p class="fee">&#8377;45,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./contact-admissions.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/advanced-nlp.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Advanced NLP with ChatGPT</p>
+                    <p>Learn Google Cloud fundamentals, cloud architecture,
+                      GCP services</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.3k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>6 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>30h 30m</p> -->
+                      <p class="fee">&#8377;19,999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./contact-admissions.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/ai-creative-art.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Prompt Engineering</p>
+                    <p>Learn NLP, Machine Learning, Attention Mechanism, GPT
+                      models</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.3k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>6 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>15h 30m</p> -->
+                      <p class="fee">&#8377;19,999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cards" id="analytics-card">
+            <a href="./contact-admissions.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/data-analytics.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Advanced-Data Analytics</p>
+                    <p>Learn Machine Learning, Big Data, Data Mining, NLP,
+                      Predictive Analytics</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.3k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>6 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>30h 30m</p> -->
+                      <p class="fee">&#8377;24,999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./contact-admissions.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/ad-data-analytics.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Deep Learning course</p>
+                    <p>Learn Neural Networks, Deep Learning Frameworks,
+                      Computer vision, NLP</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.5k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>12 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>30h 30m</p> -->
+                      <p class="fee">&#8377;39,999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./contact-admissions.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/predictive-analytics.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Snowflake Developer course</p>
+                    <p>Learn Data Sharing, Automatic Query Optimizing,
+                      Semi-structured data support, security features</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.3k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>12 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>15h 30m</p> -->
+                      <p class="fee">&#8377;45,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="cards" id="programming-card">
+            <a href="./cooursedetailspage-Python.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/python-programming.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Python Programming</p>
+                    <p>Learn Python programming, Control Flow, Data structures,
+                      Pandas, File handling</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.7k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>8 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>30h 30m</p> -->
+                      <p class="fee">&#8377;19,999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./contact-admissions.html" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/full-stack.svg" alt="img">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Full Stack Development</p>
+                    <p>Learn HTML, CSS, JavaScript, backend development,
+                      databases</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.5k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>12 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>30h 30m</p> -->
+                      <p class="fee">&#8377;25,999</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="./cooursedetailspage-Angular" class="card-details-box">
+              <div class="card-details">
+                <div class="card-details-image">
+                  <img src="./images/course-page-angular-sm.jpg" alt="img" style="border-radius: 50px 50px 0 0">
+                </div>
+                <div class="card-info">
+                  <div class="card-head">
+                    <p>Become Angular 18 Expert</p>
+                    <p>Learn Angular Fundamentals, Pipes,<br> Testing & Debugging, Deployment, API Integration</p>
+                  </div>
+                  <div class="rating">
+                    <div style="display: flex;">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                      <img src="./images/star.svg" alt="img">
+                    </div>
+                    <div class="reviews">
+                      <p>(+4.3k reviews)</p>
+                    </div>
+                  </div>
+                  <div class="duration">
+                    <div class="lessons" style="display: flex;">
+                      <img src="./images/Literature.svg" alt="book" width="20px" height="20px">
+                      <p>6 Weeks</p>
+                    </div>
+                    <div class="time">
+                      <!-- <img src="./images/Future.svg" alt="time" width="20px" height="20px">
+                      <p>15h 30m</p> -->
+                      <p class="fee">&#8377; 1,95,000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </center>
+  </div>
+
+  <!-- ExploreCourse end -->
+
+  <!-- Testimonial carousel Start  -->
+  <section>
+    <div class="bodyTestimonial">
+      <div class="carousel-image-container">
+        <h1 class="testimonial-heading">Here is what our students say</h1>
+      </div>
+      <div class="sadrzi-oba-kontejnera">
+        <div class="testimonial-carousel" id="testimonialCarousel">
+          <div class="testimonial-container" id="testimonialContainer"></div>
+          <button class="carousel-controlT left" id="prevButton">&#8592;</button>
+          <button class="carousel-controlT right" id="nextButton">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of Testimonial carousel -->
+
+
+  <footer class="footer">
+    <div class="footer__top wrapper">
+      <div class="footer__container">
+        <h3 class="footer__title-main">DigitalNexusAI</h3>
+        <p class="footer__text">Remember, at Digital Nexus AI, we don’t just create; we innovate.
+        </p>
+        <ul class="footer__list footer__list-reversed">
+          <li class="footer__item"><a class="footer__link"
+              href="https://www.facebook.com/people/Digitalnexusaidotcom/61562625252000/" target="_blank"><img
+                class="footer__social-network-image" src="./images/social-network-facebook.svg" alt="Facebook"></a></li>
+          <!-- <li class="footer__item"><a class="footer__link" href="#"><img class="footer__social-network-image" src="./images/social-network-x.svg" alt="X"></a></li> -->
+          <li class="footer__item"><a class="footer__link" href="https://www.instagram.com/digitalnexusaidotcom/"
+              target="_blank"><img class="footer__social-network-image" src="./images/social-network-instagram.svg"
+                alt="Instagram"></a>
+          </li>
+          <li class="footer__item"><a class="footer__link" href="https://www.linkedin.com/company/digital-nexus-ai-com/"
+              target="_blank"><img class="footer__social-network-image" src="./images/social-network-linkedin.svg"
+                alt="Linkedin"></a></li>
+          <li class="footer__item"><a class="footer__link" href="https://www.youtube.com/@digitalnexusai/"
+              target="_blank"><img class="footer__social-network-image-youtube"
+                src="./images/social-network-youtube.svg" alt="Youtube"></a></li>
+        </ul>
+        <div class="footer__container-contact">
+          <h4 class="footer__container-title">Contact</h4>
+          <p class="footer__container-text">Email: <span
+              class="footer__container-text-span">contact@digitalnexusai.com</span></p>
+          <p class="footer__container-text">Phone: <span class="footer__container-text-span">+1 (408) 661-0258</span>
+          </p>
+          <p class="footer__container-text">Address: <span class="footer__container-text-span">No. 25, 1st Main, NR
+              Colony, Bangalore
+            </span></p>
+        </div>
+      </div>
+      <div class="footer__container">
+        <h4 class="footer__title footer__title-center">The Company</h4>
+        <ul class="footer__list">
+
+          <li class="footer__item footer__item-list"><a class="footer__link"
+              href="./index.html#product-showcase">Products</a></li>
+          <li class="footer__item footer__item-list"><a class="footer__link"
+              href="./index.html#header-training">Services</a></li>
+          <li class="footer__item footer__item-list"><a class="footer__link" href="./coursepage.html">Courses</a></li>
+          <li class="footer__item footer__item-list"><a class="footer__link" href="./index.html#meet-dna">About Us</a>
+          </li>
+          <li class="footer__item footer__item-list"><a class="footer__link" href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__container">
+        <h4 class="footer__title footer__title-center">Legal Information</h4>
+        <ul class="footer__list">
+          <li class="footer__item footer__item-list"><a class="footer__link" href="./terms.html">Terms
+              of Service</a>
+          </li>
+          <li class="footer__item footer__item-list"><a class="footer__link" href="./privacy.html">Privacy Policy</a>
+          </li>
+          <!-- <li class="footer__item footer__item-list"><a class="footer__link" href="#">Cookie Policy</a></li> -->
+          <li class="footer__item footer__item-list"><a class="footer__link" href="./refund.html">Refund
+              Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer__container">
+        <h3 class="footer__title-main footer__title-main-newslatter">Newsletter</h3>
+        <p class="footer__text footer__text-newslatter">Stay up-to-date with DNAs latest news and service offerings.</p>
+        <div class="footer__form-group">
+          <form action="subscribe.php" method="post">
+            <input type="text" id="email" name="email" class="footer__input" placeholder="Enter your Email...">
+            <button class="footer__button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__bottom-text">© Copyright 2024 DigitalNexusAI. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+<script src="./tetimonial.js"></script>
+<!-- <script src="scriptExploreC.js"></script> -->
+
+</html>

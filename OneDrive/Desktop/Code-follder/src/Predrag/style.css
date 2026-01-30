@@ -1,0 +1,16 @@
+*{
+    width: 0%;
+    height: 0%;
+}
+.main{
+ display: flex;
+ flex-direction: row;
+
+    
+}
+div{
+    width: 500px;
+    height: 10px;
+   background-color: brown;
+    border: 1px solid black;
+}

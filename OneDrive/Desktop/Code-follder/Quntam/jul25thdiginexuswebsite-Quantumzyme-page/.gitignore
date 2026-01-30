@@ -1,0 +1,8 @@
+.DS_Store
+router.php
+.htaccess
+
+.env
+node_modules
+
+phpfiles

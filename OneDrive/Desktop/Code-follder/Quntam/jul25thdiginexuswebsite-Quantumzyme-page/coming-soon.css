@@ -1,0 +1,212 @@
+/*
+CSS RESETS
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+html {
+  background: radial-gradient(
+    54.85% 93.59% at 50% 50%,
+    #1e6891 0%,
+    #104a6d 33%,
+    #083859 42%,
+    #002845 54.5%,
+    #0a1320 76%
+  );
+}
+
+/* CUSTOM CSS */
+body {
+  background-image: url("./images/coming-soon-bg-lg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  mix-blend-mode: lighten;
+}
+
+.elipse-1 {
+  position: absolute;
+  width: 339px;
+  height: 339px;
+  left: 0px;
+  top: -73px;
+  z-index: -1;
+  background: #ff7925;
+  filter: blur(225px);
+}
+
+.elipse-2 {
+  position: absolute;
+  width: 444px;
+  height: 444px;
+  left: 1097px;
+  top: 406px;
+  background: #ff7925;
+  filter: blur(250px);
+}
+
+main {
+  /* width: 1440px; */
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.coming-soon-header {
+  background-image: url("./images/coming-soon-elipse.svg");
+  background-size: 1440px 83px;
+  height: 83px;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  clip-path: ellipse(50% 83px at 50% 0%);
+}
+
+.logo {
+  margin: 0 auto;
+  width: 208px;
+  height: 83px;
+  background-image: url("./images/coming-soon-logo.png");
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  background-position: 0 center;
+  padding: 28px 0 0 48px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25.2px;
+}
+.logo a {
+  font-family: "Exo", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.go-back {
+  background-image: url("./images/coming-soon-back.png");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  grid-column: 1/4;
+  font-size: 16px;
+  line-height: 14px;
+  color: white;
+  margin: 10px 0 0 7.29vw;
+  padding-left: 24px;
+  text-decoration: none;
+  position: relative;
+  top: 5rem;
+}
+
+.hero {
+  z-index: 2;
+  grid-column: 2/3;
+}
+
+.hero h1 {
+  margin: 10.93rem 0 11.5px 0;
+  padding: 0;
+  font-size: 88px;
+  font-weight: 600;
+  line-height: 105.6px;
+  color: white;
+  text-align: center;
+}
+.hero hr {
+  border-bottom: 1px solid rgba(94, 148, 184, 1);
+  width: 312px;
+  margin: 0 auto;
+}
+
+.hero p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.8px;
+  text-align: center;
+  color: white;
+  margin-top: 11.5px;
+}
+
+.hero .email {
+  width: 414px;
+  height: 44px;
+  border-radius: 30px;
+  background-color: #fff;
+  display: flex;
+  margin: 40px auto 72px auto;
+}
+.hero input {
+  width: 278px;
+  border-radius: 30px 0 0 30px;
+  border: none;
+  font-size: 16px;
+  color: black;
+  padding-left: 1rem;
+}
+.hero button {
+  background: rgba(232, 109, 35, 1);
+  border-radius: 30px;
+  width: 136px;
+  height: 44px;
+  border: none;
+  font-weight: 700;
+  color: white;
+}
+.social {
+  display: flex;
+  gap: 12px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.social a {
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+}

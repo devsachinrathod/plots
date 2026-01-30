@@ -1,0 +1,187 @@
+body {
+    background: url('images/circuit-cyberspace-closeup-with-neon-lights1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Default font for the page */
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.8);
+    /* Translucent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-right: 40%;
+    /* Positioning a little to the left from the center */
+    text-align: center;
+}
+
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.register-card {
+    background: rgba(255, 255, 255, 0.8);
+    /* Translucent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    margin-right: 20%;
+    /* Positioning a little to the left from the center */
+    text-align: center;
+}
+
+.role-selection {
+    display: flex;
+    align-items: center;
+    /* This ensures vertical alignment */
+    margin: 20px 0;
+}
+
+.role-selection span {
+    margin-right: 10px;
+    /* Provides spacing between text and the first radio button */
+}
+
+.role-selection input[type="radio"] {
+    transform: scale(1.5);
+    /* Scales up the radio buttons */
+    margin: 0 10px 0 0;
+    /* Right margin for spacing, zero margin on top and bottom for alignment */
+    vertical-align: middle;
+    /* Helps align radio buttons vertically with the text */
+}
+
+.role-selection label {
+    margin: 0 20px 0 5px;
+    /* Adjust as needed for spacing around labels */
+    vertical-align: middle;
+    /* Aligns text vertically with the middle of the radio buttons */
+}
+
+
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    /* White background */
+    border-radius: 50%;
+    /* Circular shape */
+    padding: 10px;
+    /* Adjust padding to control the size of the white circle */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    /* Drop shadow for depth */
+    /* Uncomment below for a bevel effect */
+    /* box-shadow: inset 1px 1px 2px #fff, inset -1px -1px 2px #ccc; */
+}
+
+h1 {
+    font-family: 'sans-serif', sans-serif;
+    /* Montserrat for company name */
+    font-weight: 700;
+    /* Bold */
+}
+
+input[type="email"],
+input[type="password"],
+.input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 30px;
+}
+
+.remember-me input {
+    margin-right: 5px;
+}
+
+
+.forgot-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password i {
+    margin-right: 8px;
+    /* Space between the icon and text */
+    color: #F06C1A;
+}
+
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.register {
+    font-size: 0.9em;
+}
+
+.register a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+.text-danger {
+    /* color red-800 */
+    color: rgb(244, 67, 54);
+}
+
+.text-left {
+    text-align: left;
+}
+
+.input-error {
+    border: 1px solid rgb(244, 67, 54) !important;
+}

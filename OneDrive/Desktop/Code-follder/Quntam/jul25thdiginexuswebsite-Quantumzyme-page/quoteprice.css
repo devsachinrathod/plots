@@ -1,0 +1,621 @@
+/*
+  CSS RESETS
+  */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: "Raleway", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: rgba(10, 19, 32, 1);
+
+  }
+  
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* Custom CSS */
+  
+  .wrapper {
+    margin: 0 auto;
+    padding: 0 6.66vw;
+    overflow: hidden;
+  }
+/* start of become a certified data scientist */
+.coursepage-nav-container {
+    display: flex;
+    min-height: 4.75rem;
+    padding: 8px 6.66vw;
+    align-items: baseline;
+  }
+  
+  .coursepage-logo {
+    width: 13.375rem;
+    height: 3.75rem;
+    background-image: url("./images/logo.png");
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: 3.75rem 3.75rem;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+  }
+  
+  .coursepage-logo span {
+    display: block;
+    font-size: 1.5rem;
+    margin-left: 3.75rem;
+    margin-top: 1rem;
+    color: white;
+  }
+  
+  .coursepage-logo-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+  }
+  
+  .coursepage-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    align-items: baseline;
+  }
+  
+  .coursepage-nav a {
+    color: white;
+    text-decoration: none;
+    line-height: 19.2px;
+  }
+  
+  .coursepage-nav ul {
+    display: flex;
+    padding-left: 3.88vw;
+    gap: 2.5vw;
+    /* */
+  }
+  
+  .coursepage-nav ul li {
+    list-style: none;
+    padding: 0.5rem 0rem;
+  }
+  
+  .explore-dropdown {
+    text-transform: capitalize;
+    background-image: url("./images/dropdown-white.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 1.5rem;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(10, 19, 32, 1);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(10, 19, 32, 1);
+    width: 230px;
+    height: 250px;
+    margin-top: 30px;
+    margin-right: 30px;
+    text-transform: none;
+    text-align: left;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* padding-left: 30px; */
+    /* margin-right: 10px; */
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    padding: 0px 10px;
+    margin: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dropdown-content a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    margin-left: 10px;
+    background: linear-gradient(277.59deg, #ff6200 7.17%, #00baff 92.47%);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .dropdown-content a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .head-coursepage {
+    margin: 0 auto;
+    color: #fff;
+    background-color: transparent;
+  }
+  
+  a.coursepage-register {
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    padding: 14px 32px;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+  }
+
+  a.coursepage-register:hover {
+    background: linear-gradient(277.59deg, #ff6200 7.17%, #00baff 92.47%);
+    color: white;
+  }
+  
+  .btn-apply-now:hover {
+    background: linear-gradient(277.59deg, #ff6200 7.17%, #00baff 92.47%);
+    color: white;
+  }
+  
+  .coursepage-login-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .course-page-laptopguyimage {
+    border-radius: 50px;
+  }
+  
+  .become-a-certified-data-scientist-upper-section {
+    margin: 0.68rem 2.777vw 4.5rem;
+  }
+  
+  .become-a-certified-data-scientist-section {
+    background-image: url("./images/header-bg.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+    padding: 3.333vw;
+    border-radius: 50px;
+    background-size: cover;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: right;
+  }
+  
+  .become-a-certified-data-scientist-div {
+    max-width: 47.375rem;
+  }
+  
+  .become-h1 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 400;
+    font-family: "Exo", sans-serif;
+    line-height: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .rating-stars {
+    display: flex;
+    margin-right: 10px;
+  }
+  
+  .rating-div {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+  }
+  
+  .rating-div p {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin-left: 2rem;
+  }
+  
+  .check-items-ul li {
+    list-style: none;
+    background-image: url("./images/check.svg");
+    background-repeat: no-repeat;
+    padding: 0.25rem 0 0.5rem 1.5rem;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 13.38px;
+  }
+  
+  .btn-apply-now {
+    box-shadow: -6px 6px 22px 0px #0000006b;
+    background-color: white;
+    padding: 0.875rem 4rem;
+    border-radius: 50px;
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: all 1.3s ease-in-out;
+  }
+  
+  .btn-learn-more {
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 0.5rem 2.5rem;
+    color: white;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  
+  .action-buttons-div {
+    display: flex;
+    padding-left: 4.444vw;
+    gap: 1rem;
+    margin: 2rem;
+    align-items: baseline;
+  }
+
+  .quote-price-link {
+    text-decoration: none;
+  }
+
+  .quote-price-button:hover {
+    cursor: pointer;
+  }
+
+  .quote-price-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: "Raleway";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-align: left;
+    padding-top: 2.43rem;
+  }
+
+  .quote-price-content {
+    color: white;
+    padding: 0 15.20vw 8.68rem 15.20vw;
+  }
+
+  .quote-price-content h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 86.4px;
+    margin-bottom: 5.06rem;
+  }
+
+  .quote-price-content h2 {
+    font-family: "Raleway",sans-serif;
+font-size: 32px;
+font-weight: 600;
+line-height: 42.88px;
+text-align: left;
+
+    margin-bottom: 1.68rem;
+  }
+
+  .quote-price-content p {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.44px;
+    text-align: left;
+    margin-bottom: 2.87rem;
+  }
+
+  .quote-price ol {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+
+  #quote-price-margin {
+    margin-bottom: 2rem;
+  }
+
+  .quote-price-content span {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.44px;
+    text-align: left;
+
+  }
+
+  
+  /* Footer Start */
+
+.footer {
+    background: #0e1826;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding-top: 2.68rem;
+    padding-bottom: 2.98vh;
+    color: #000000;
+    box-shadow: -6px 6px 22px 0px #0000006b;
+    background: #0e182699;
+    color: #fff;
+  }
+  
+  .footer::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    right: 1px;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 203, 255, 0.5) 0%,
+      rgba(255, 98, 0, 0.5) 100%
+    );
+    z-index: -1;
+  }
+  
+  .footer__container:first-child {
+    max-width: 273px;
+  }
+  
+  .footer__container:last-child {
+    width: 27.7vw;
+    min-width: 27.7vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer__title-main {
+    font-family: "Exo", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+  
+  .footer__title-main-newslatter {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .footer__text {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.87rem;
+    font-weight: 200;
+    line-height: 1rem;
+    margin-top: 0.62vh;
+  }
+  
+  .footer__bottom {
+    position: relative;
+    text-align: center;
+    background-color: #1c1c1c;
+    padding: 0.62vh 0;
+    background: linear-gradient(90deg, #00cbff 0%, #ff6200 100%);
+  }
+  
+  .footer__bottom::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(90deg, #00cbff 0%, #ff6200 100%);
+    z-index: -1;
+    border-radius: 50px;
+  }
+  
+  .footer__bottom-text {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 0.87rem;
+    font-weight: 400;
+    line-height: 1rem;
+  }
+  
+  .footer__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.66vh;
+    flex-direction: column;
+  }
+  
+  .footer__list-reversed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .footer__social-network-image {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .footer__social-network-image-youtube {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .footer__link {
+    text-decoration: none;
+  }
+  
+  .footer__container-title {
+    font-family: "Exo", sans-serif;
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 1.36rem;
+  }
+  
+  .footer__container-contact {
+    font-family: "Inter", sans-serif;
+    margin-top: 2.77vh;
+    margin-bottom: 1.59vh;
+  }
+  
+  .footer__container-contact p {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .footer__container-text {
+    margin-top: 0.62rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.21rem;
+  }
+  
+  .footer__container-text-span {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.9rem;
+  }
+  
+  .footer__title {
+    font-size: 1.12rem;
+    font-weight: 400;
+    line-height: 1.36rem;
+    font-family: "Exo", sans-serif;
+  }
+  
+  .footer__title-center {
+    margin-top: 2.22vh;
+  }
+  
+  .footer__item-list {
+    margin-top: 0.75rem;
+  }
+
+  .footer__item-list:hover {
+    text-decoration: underline;
+  }
+  
+  .footer__link {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.21rem;
+    text-align: left;
+  }
+  
+  .footer__form-group {
+    position: relative;
+    margin-top: 3.12vh;
+  }
+  
+  .footer__input {
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.21rem;
+    padding: 0.62vh 10vw 0.62vh 1.73vw;
+    width: 100%;
+    max-width: 399px;
+    height: 41px;
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+  .footer__button {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.21rem;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 50px;
+    padding: 1.12vh 1.12vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 41px;
+    margin-right: 0;
+    z-index: 1;
+  }
+  
+  .footer__button::placeholder {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.12rem;
+    font-style: italic;
+    font-weight: 200;
+    padding: 0.62vh 3vw;
+    line-height: 1.36rem;
+  }
+  
+  .footer__button:hover {
+    cursor: pointer;
+  }
+  
+  .footer__text-newslatter {
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 0.62vh;
+  }
+  
+  /* Footer End */

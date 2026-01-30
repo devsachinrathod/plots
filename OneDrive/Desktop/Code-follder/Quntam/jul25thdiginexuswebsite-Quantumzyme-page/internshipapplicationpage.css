@@ -1,0 +1,266 @@
+body {
+  background-image: url("./images/Page-bg 2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-internship-application {
+  padding-bottom: 4rem;
+  text-align: left;
+}
+
+.form-container {
+  border-radius: 0.625rem;
+  color: #ccc;
+  display: flex;
+  margin-left: 4.375rem;
+  margin-top: 3.3125rem;
+  max-width: 50rem;
+  padding-top: 1.25rem;
+  width: 100%;
+}
+
+.first-name {
+  background: #2f3948;
+  border: 2px solid transparent;
+  border-radius: 1.78rem;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.h2-internship-application,
+h2 {
+  color: #fff;
+  font-family: Exo, sans-serif;
+  font-weight: 400;
+  margin-left: 4.375rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.input-container {
+  background: transparent;
+  border-radius: 1.78rem;
+  display: inline-block;
+  padding: 2px;
+  position: relative;
+}
+
+.input-container::before {
+  background: linear-gradient(90deg, #00cbff 0%, #ff6200 100%);
+  border-radius: inherit;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.input-container:hover::before {
+  opacity: 1;
+}
+
+.input-internship-application {
+  background: #2f3948;
+  border: none;
+  border-radius: 1.78rem;
+  box-shadow: -0.375rem 0.375rem 1.375rem 0px #0000004d;
+  color: white;
+  font-family: Raleway, sans-serif;
+  font-size: 1rem;
+  height: 4.6875rem;
+  outline: none;
+  padding: 0 0.9375rem;
+  width: 19.875rem;
+}
+.dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("./images/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1.2em;
+  padding-right: 2rem;
+}
+
+.input-internship-application::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.input-internship-application:hover {
+  background: #4a515d;
+}
+
+.input-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.lines {
+  float: right;
+  /* margin-top: 0.625rem; */
+  position: absolute;
+}
+
+.email,
+.department-applied,
+.preferred-joining-date 
+{
+  padding-right: 1.75rem;
+  width: 41.25rem;
+}
+
+
+
+.multiple-choice {
+  color: white;
+  font-family: Raleway, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.17rem;
+  margin-left: 5rem;
+  margin-top: 6vh;
+  text-align: left;
+  width: 37.5rem;
+}
+
+.p-internship-application {
+  margin-left: 4rem;
+  /* padding: 0; */
+}
+
+.subheader {
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  text-align: left;
+}
+
+.photos {
+  /* commented by nachiket */
+  /* background-image: url(./images/checkboxes.png); */
+  float: right;
+  margin-right: 1.45rem;
+  margin-top: 18rem;
+}
+.contact-photo {
+  margin-left: 2rem;
+}
+
+.photos img:nth-child(1) {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.para {
+  gap: 0.625rem;
+  margin-top: 0.625rem;
+  margin-right: 1rem;
+}
+
+.question-para {
+  margin-bottom: 1rem;
+}
+
+.submit-button {
+  background: #ff6200;
+  border: none;
+  border-radius: 1.78rem;
+  box-shadow: -0.375rem 0.375rem 1.375rem 0px #0000004d;
+  color: white;
+  font-family: Raleway, sans-serif;
+  font-size: 1.25rem;
+  height: 4.6875rem;
+  line-height: 1.47rem;
+  margin-bottom: 13.25rem;
+  margin-left: 4.375rem;
+  margin-top: 5rem;
+  outline: none;
+  padding: 1.25rem 3.125rem;
+  width: 40.8125rem;
+}
+.input-container ol li:hover {
+  background-color: #ff6200;
+}
+.symbol {
+  align-items: center;
+  display: flex;
+  gap: 0.625rem;
+  height: 1.58rem;
+  margin-top: 0.625rem;
+  position: relative;
+  width: 2.25rem;
+  margin-left: 9rem;
+  /* margin-right: auto; */
+}
+
+.yes-no-text {
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.input-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #00cbff 0%, #ff6200 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 0.125rem solid #fff;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+  position: relative;
+  width: 1.25rem;
+  vertical-align: middle;
+}
+
+input[type="radio"]:checked::before {
+  background-color: #f0680f;
+  border-radius: 0.125rem;
+  content: "";
+  height: 0.95rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.75rem;
+}
+
+/* required asterisk */
+.required-field {
+  position: relative;
+}
+
+.required-asterisk {
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  left: 3px;   /* Adjust as needed for padding */
+  top: 13%;
+  transform: translateY(-50%);
+  pointer-events: none; /* So it doesn't block input clicks */
+  font-size: 1.2em;     /* Adjust size as needed */
+}
+.required-asterisk_multiple-choie{
+  color: red;
+  font-weight: bold;
+  margin-left: 2px;
+}

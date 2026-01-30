@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Logo/DNA Logo symbol.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./cooursedetailspage-CertDS-style.css" />
+    <script defer src="./script-coursepage.js"></script>
+    <title>Digital Nexus AI</title>
+  </head>
+
+  <body>
+    <header class="course-details-header">
+        <button class="navigation__hamburger" aria-label="Toggle menu" aria-expanded="false">
+         <span></span>
+         <span></span>
+         <span></span>
+        </button>
+      <div class="man-nav-container">
+        <a href="./index.html" class="coursepage-logo-link">
+          <div class="logo"><span>DigitalNexusAI</span></div>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li>
+              <a href="./coursepage.html" class="explore">Explore</a>
+            </li>
+            <!-- <li><a href="#">Scolarship</a></li> -->
+            <li><a href="./contact-admissions.html">Teach on DNA</a></li>
+            <li><a href="./index.html#meet-dna">About Us</a></li>
+            <li><a href="./quoteprice.html">Quote Price</a></li>
+          </ul>
+          <ul>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./register.html" class="register-btn">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="course-nav">
+        <a href="./index.html">Home</a
+        ><img src="./images/right-arrow.png" alt="arrow" /><a
+          href="./coursepage.html"
+          >Explore</a
+        ><img src="./images/right-arrow.png" alt="arrow" /><a
+          href="./cooursedetailspage-Python.html"
+          >Generative AI</a
+        >
+      </div>
+      <div class="course-details">
+        <div class="python-course-image-bg course-details-header-img"></div>
+        <div class="course-description">
+          <div class="course-details-certificate">
+            <a target="_blank" href="documents/certificate.pdf">
+              <p class="course-details-certificate-text">
+                Completion Certificate
+              </p>
+            </a>
+          </div>
+          <div class="ratings">
+            <div class="stars">
+              <img src="./images/star-black.svg" slt="Star" />
+              <img src="./images/star-black.svg" slt="Star" />
+              <img src="./images/star-black.svg" slt="Star" />
+              <img src="./images/star-black.svg" slt="Star" />
+              <img src="./images/star-black.svg" slt="Star" />
+            </div>
+            <p class="rating-text">4.8 (128)</p>
+          </div>
+          <h1>Programming in Python for Developers</h1>
+          <p class="course-description-text">
+            Unleash Your Coding Potential: Master Python, Master Possibilities
+          </p>
+          <ul class="course-description-icons">
+            <li class="course-icon-book">8 Weeks</li>
+            <!-- <li class="course-icon-clock">6-month Duration</li> -->
+            <li class="course-icon-graph">Zero to Hero</li>
+          </ul>
+          <div class="course-description-footer">
+            <p>₹ 19,999</p>
+            <!-- <a href="#" class="course-description-btn">Buy Now</a> -->
+            <!-- <form>
+              <script
+                src="https://checkout.razorpay.com/v1/payment-button.js"
+                data-payment_button_id="pl_OFU28nPR1ccarb"
+                async
+              ></script>
+            </form> -->
+            <div class="course-description-btns">
+              <form>
+                <script
+                  src="https://checkout.razorpay.com/v1/payment-button.js"
+                  data-payment_button_id="pl_OlpNYmyMWfL8eW"
+                  async
+                ></script>
+              </form>
+              <!-- <a href="#" class="buy">Buy Course</a> -->
+              <!-- <button class="quote">Quote price</button> -->
+              <div id="quoteModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close"></span>
+                  <h2>Quote your price</h2>
+                  <label for="offer">Your offer</label>
+                <div class="input-wrapper">
+                  <input type="number" id="offer" placeholder="₹0">
+                </div>
+                  <!-- Suggested offers -->
+                   <div class="modal-content-buttons">
+                    <button class="modal-form-button">₹ 19,199</button>
+                    <button class="modal-form-button">₹ 19,199</button>
+                    <button class="modal-form-button">₹ 19,199</button>
+                  </div>
+                  <!-- Textarea for additional notes -->
+                  <textarea rows="4" placeholder="Message (optional)" ></textarea>
+
+                  <!-- Submit button -->
+                  <button class="modal-form-submit">Continue</button>
+
+                  <!-- Link for how quote works -->
+                  <a href="./quoteprice.html" class="link">How quote work</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills">
+        <h3>Skills you'll gain</h3>
+        <ul class="skills-list">
+          <li>Core Python</li>
+          <li>OOPs</li>
+          <li>Exception Handling</li>
+          <li>Python libraries</li>
+          <li>Data analysis</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="course-content-instructor-bg">
+      <div class="course-content-instructor-wrapper">
+        <div class="course-content-instructor">
+          <div class="course-content-wrapper">
+            <h2>Course Outline</h2>
+            <ul class="course-content">
+              <li class="course-content-item">
+                <div class="course-content-intro">
+                  <h3>Python Basics</h3>
+                </div>
+                <ul class="course-content-details">
+                  <li>Introduction to Python</li>
+                  <li>Environment Setup</li>
+                  <li>print() and input() functions</li>
+                  <li>Jupyter notebooks, Anaconda, VS Code, etc</li>
+                  <li>Coding exercise: Age calculator</li>
+                </ul>
+              </li>
+              <li class="course-content-item">
+                <div class="course-content-intro">
+                  <h3>Python Variables and Data Types</h3>
+                </div>
+                <ul class="course-content-details">
+                  <li>Variables and constants</li>
+                  <li>Simple data types</li>
+                  <li>Operators</li>
+                  <li>Functions</li>
+                  <li>
+                    Coding exercise: Arithmetic Operations (Calculator logic)
+                  </li>
+                </ul>
+              </li>
+              <li class="course-content-item">
+                <div class="course-content-intro">
+                  <h3>Control Flow</h3>
+                </div>
+                <ul class="course-content-details">
+                  <li>If, else, elif statements</li>
+                  <li>For loop</li>
+                  <li>While loop</li>
+                  <li>Coding exercise: Identify Stock market candle color</li>
+                </ul>
+              </li>
+              <li class="course-content-item">
+                <div class="course-content-intro">
+                  <h3>Data Structures in Python</h3>
+                </div>
+                <ul class="course-content-details">
+                  <li>Lists / Arrays</li>
+                  <li>Tuples</li>
+                  <li>Sets</li>
+                  <li>Dictionaries</li>
+                  <li>Coding exercise: Code the FLAMES game</li>
+                </ul>
+              </li>
+              <li class="course-content-item">
+                <div class="course-content-intro">
+                  <h3>String Manipulation</h3>
+                </div>
+                <ul class="course-content-details">
+                  <li>Concatenating strings</li>
+                  <li>Replace, Split, Upper/lower case</li>
+                  <li>Slicing strings</li>
+                  <li>Formatting text</li>
+                  <li>String methods (find, count, join, etc.)</li>
+                  <li>Coding exercise: Word frequency counter</li>
+                </ul>
+              </li>
+              <li class="course-content-item">
+                <div class="course-content-intro">
+                  <h3>Classes and Objects</h3>
+                </div>
+                <ul class="course-content-details">
+                  <li>Create classes, objects, and methods</li>
+                  <li>__init__(), __str__() and super() functions</li>
+                  <li>Scope of variables and objects</li>
+                  <li>OOP concepts - Abstraction, Encapsulation</li>
+                  <li>OOP concepts - Inheritance & Polymorphism</li>
+                  <li>Coding exercise: Bank account management system</li>
+                </ul>
+              </li>
+              <li class="course-content-item">
+                <div class="course-content-intro">
+                  <h3>Exception handling</h3>
+                </div>
+                <ul class="course-content-details">
+                  <li>Try Except</li>
+                  <li>Multiple exceptions</li>
+                  <li>Else with except</li>
+                  <li>Finally block</li>
+                  <li>Raising exceptions</li>
+                  <li>Coding Exercise: Witty exceptions</li>
+                </ul>
+              </li>
+              <li class="course-content-item">
+                <div class="course-content-intro">
+                  <h3>File handling</h3>
+                </div>
+                <ul class="course-content-details">
+                  <li>Working with CSV files</li>
+                  <li>Open() function with different modes</li>
+                  <li>Reading files and readline()</li>
+                  <li>Writing and appending to files</li>
+                  <li>Deleting files and folders</li>
+                  <li>Coding Exercise: Candle color from File data</li>
+                </ul>
+              </li>
+              <li class="course-content-item">
+                <div class="course-content-intro">
+                  <h3>Installing and using packages (PIP)</h3>
+                </div>
+                <ul class="course-content-details">
+                  <li>The powerful pip command</li>
+                  <li>Installing Pandas, Numpy, and matplotlib</li>
+                  <li>Importing and using packages (matplotlib)</li>
+                  <li>Pipenv</li>
+                  <li>Deleting files and folders</li>
+                  <li>
+                    Coding Exercise: Plot the stock market graph (candlesticks)
+                  </li>
+                </ul>
+              </li>
+              <li class="course-content-item">
+                <div class="course-content-intro">
+                  <h3>Pandas DataFrames</h3>
+                </div>
+                <ul class="course-content-details">
+                  <li>Introduction</li>
+                  <li>Series</li>
+                  <li>Dataframes</li>
+                  <li>Dataframe methods</li>
+                  <li>Working with JSON data</li>
+                  <li>Coding Exercise: Sales Data analysis</li>
+                </ul>
+              </li>
+              <li class="course-content-item">
+                <div class="course-content-intro">
+                  <h3>Employee Management Project</h3>
+                </div>
+                <ul class="course-content-details">
+                  <li>Creating a project</li>
+                  <li>Creating the necessary classes</li>
+                  <li>Creating functions for employee management</li>
+                  <li>Exception handling</li>
+                  <li>Debugging and testing the application</li>
+                </ul>
+              </li>
+              <li class="course-content-item">
+                <div class="course-content-intro">
+                  <h3>Additional / bonus topics</h3>
+                </div>
+                <ul class="course-content-details">
+                  <li>Lambda functions & Closures</li>
+                  <li>Regular expressions</li>
+                  <li>Recursion, Iterators, and matrices</li>
+                  <li>Web scraping</li>
+                  <li>
+                    Coding Exercise: Scraping live stock market data and
+                    displaying candlesticks
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="course-instructor">
+            <h2>Multi instructor Course</h2>
+
+            <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+            <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+
+            <ul id="instructors">
+              <li class="instructor-slide">
+                <img
+                  src="./images/instructors/benjamin-schoreder.jpg"
+                  alt="Benjamin Schroeder - US"
+                />
+                <p class="instructor-slide-name">Benjamin Schroeder - US</p>
+                <p class="instructor-slide-about">
+                  Experienced in the IT industry for more than 20 years, worked
+                  with top-rated multinational corporations, navigated
+                  cross-cultural environments, contributed to cutting-edge
+                  projects, and passionately mentored countless students and
+                  engineers using an innovative teaching approach.
+                </p>
+                <ul class="instructor-slide-links">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/benjamin-schroeder-8bb5b6227/"
+                      ><img src="./images/LinkedIn Circled.svg" alt="LinkedIn"
+                    /></a>
+                  </li>
+                  <!-- <li>
+                    <a href="#"
+                      ><img src="./images/Facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/Twitter Circled.svg" alt="Twitter"
+                    /></a>
+                  </li> -->
+                </ul>
+              </li>
+              <li class="instructor-slide">
+                <img
+                  src="./images/instructors/praveen-kumar.jpeg"
+                  alt="Praveen Kumar - India"
+                />
+                <p class="instructor-slide-name">Praveen Kumar - India</p>
+                <p class="instructor-slide-about">
+                  Experienced in the IT industry for more than 20 years, worked
+                  with top-rated multinational corporations, navigated
+                  cross-cultural environments, contributed to cutting-edge
+                  projects, and passionately mentored countless students and
+                  engineers using an innovative teaching approach.
+                </p>
+                <ul class="instructor-slide-links">
+                  <li>
+                    <a href="https://www.linkedin.com/in/praveen-sprhava/"
+                      ><img src="./images/LinkedIn Circled.svg" alt="LinkedIn"
+                    /></a>
+                  </li>
+                  <!-- <li>
+                    <a href="#"
+                      ><img src="./images/Facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/Twitter Circled.svg" alt="Twitter"
+                    /></a>
+                  </li> -->
+                </ul>
+              </li>
+              <li class="instructor-slide">
+                <img
+                  src="./images/instructors/manoj-joshi.jpeg"
+                  alt="Manoj Joshi - US"
+                />
+                <p class="instructor-slide-name">Manoj Joshi - US</p>
+                <p class="instructor-slide-about">
+                  Experienced in the IT industry for more than 20 years, worked
+                  with top-rated multinational corporations, navigated
+                  cross-cultural environments, contributed to cutting-edge
+                  projects, and passionately mentored countless students and
+                  engineers using an innovative teaching approach.
+                </p>
+                <ul class="instructor-slide-links">
+                  <li>
+                    <a href="https://www.linkedin.com/in/manojjoshisj/"
+                      ><img src="./images/LinkedIn Circled.svg" alt="LinkedIn"
+                    /></a>
+                  </li>
+                  <!-- <li>
+                    <a href="#"
+                      ><img src="./images/Facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/Twitter Circled.svg" alt="Twitter"
+                    /></a>
+                  </li> -->
+                </ul>
+              </li>
+              <li class="instructor-slide">
+                <img
+                  src="./images/instructors/santosh-pericharan.jpeg"
+                  alt="Santosh Pericharan - US"
+                />
+                <p class="instructor-slide-name">Santosh Pericharan - US</p>
+                <p class="instructor-slide-about">
+                  Experienced in the IT industry for more than 20 years, worked
+                  with top-rated multinational corporations, navigated
+                  cross-cultural environments, contributed to cutting-edge
+                  projects, and passionately mentored countless students and
+                  engineers using an innovative teaching approach.
+                </p>
+                <ul class="instructor-slide-links">
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/santosh-pericharan-9b79948/"
+                      ><img src="./images/LinkedIn Circled.svg" alt="LinkedIn"
+                    /></a>
+                  </li>
+                  <!-- <li>
+                    <a href="#"
+                      ><img src="./images/Facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/Twitter Circled.svg" alt="Twitter"
+                    /></a>
+                  </li> -->
+                </ul>
+              </li>
+              <li class="instructor-slide">
+                <img
+                  src="./images/instructors/jonathan-enudeme.jpeg"
+                  alt="Jonathan Enudeme - Nigeria"
+                />
+                <p class="instructor-slide-name">Jonathan Enudeme - Nigeria</p>
+                <p class="instructor-slide-about">
+                  Experienced in the IT industry for more than 20 years, worked
+                  with top-rated multinational corporations, navigated
+                  cross-cultural environments, contributed to cutting-edge
+                  projects, and passionately mentored countless students and
+                  engineers using an innovative teaching approach.
+                </p>
+                <ul class="instructor-slide-links">
+                  <li>
+                    <a href="https://www.linkedin.com/in/jonathan-enudeme/"
+                      ><img src="./images/LinkedIn Circled.svg" alt="LinkedIn"
+                    /></a>
+                  </li>
+                  <!-- <li>
+                    <a href="#"
+                      ><img src="./images/Facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/Twitter Circled.svg" alt="Twitter"
+                    /></a>
+                  </li> -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-2">
+      <div class="left">
+        <h2 class="heading">Course Description</h2>
+        Our comprehensive Python Programming course at Digital Nexus AI.
+        Designed for both beginners and those looking to deepen their
+        programming skills, this course offers a hands-on, project-based
+        approach to mastering Python, one of the most versatile and in-demand
+        programming languages in the world. By the end of this course, you'll
+        have the skills and confidence to build your own Python applications,
+        automate tasks, and analyze data efficiently. Whether you're starting
+        your programming journey or enhancing your current skills, our Python
+        Programming course is the perfect stepping stone to a successful career
+        in tech.
+      </div>
+      <div class="vertical-line"></div>
+      <div class="right">
+        <div class="heading-container">
+          <h2 class="heading">What you'll learn</h2>
+        </div>
+        <div>
+          1. You will gain the ability to professionally program in Python.
+        </div>
+        <div>
+          2. You can become a master in functional and object-oriented concepts
+          in Python.
+        </div>
+        <div>
+          3.Become hands-on in data structures, file handling, string
+          manipulation, and more.
+        </div>
+        <div>
+          4.The coding exercises will make you sharp in understanding the
+          concepts learned.
+        </div>
+        <div>
+          5.You will get a detailed understanding of fundamental concepts around
+          python.
+        </div>
+        <div>
+          6.Exception handling, Dataframes, PIP package manager, Jupyter,
+          Anaconda, and more.
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial carousel Start  -->
+    <section>
+      <div class="bodyTestimonial">
+        <div class="carousel-image-container">
+          <h1 class="testimonial-heading">
+            What our students say about the course
+          </h1>
+        </div>
+        <div class="sadrzi-oba-kontejnera">
+          <div class="testimonial-carousel" id="testimonialCarousel">
+            <div class="testimonial-container" id="testimonialContainer"></div>
+            <button class="carousel-controlT left" id="prevButton">
+              &#8592;
+            </button>
+            <button class="carousel-controlT right" id="nextButton">
+              &#8594;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of Testimonial carousel -->
+
+    <footer class="footer">
+      <div class="footer__top wrapper">
+        <div class="footer__container">
+          <h3 class="footer__title-main">DigitalNexusAI</h3>
+          <p class="footer__text">
+            Remember, at Digital Nexus AI, we don’t just create; we innovate.
+          </p>
+          <ul class="footer__list footer__list-reversed">
+            <li class="footer__item">
+              <a
+                class="footer__link"
+                href="https://www.facebook.com/people/Digitalnexusaidotcom/61562625252000/"
+                target="_blank"
+                ><img
+                  class="footer__social-network-image"
+                  src="./images/social-network-facebook.svg"
+                  alt="Facebook"
+              /></a>
+            </li>
+            <!-- <li class="footer__item"><a class="footer__link" href="#"><img class="footer__social-network-image" src="./images/social-network-x.svg" alt="X"></a></li> -->
+            <li class="footer__item">
+              <a
+                class="footer__link"
+                href="https://www.instagram.com/digitalnexusaidotcom/"
+                target="_blank"
+                ><img
+                  class="footer__social-network-image"
+                  src="./images/social-network-instagram.svg"
+                  alt="Instagram"
+              /></a>
+            </li>
+            <li class="footer__item">
+              <a
+                class="footer__link"
+                href="https://www.linkedin.com/company/digital-nexus-ai-com/"
+                target="_blank"
+                ><img
+                  class="footer__social-network-image"
+                  src="./images/social-network-linkedin.svg"
+                  alt="Linkedin"
+              /></a>
+            </li>
+            <li class="footer__item">
+              <a
+                class="footer__link"
+                href="https://www.youtube.com/@digitalnexusai/"
+                target="_blank"
+                ><img
+                  class="footer__social-network-image-youtube"
+                  src="./images/social-network-youtube.svg"
+                  alt="Youtube"
+              /></a>
+            </li>
+          </ul>
+          <div class="footer__container-contact">
+            <h4 class="footer__container-title">Contact</h4>
+            <p class="footer__container-text">
+              Email:
+              <span class="footer__container-text-span"
+                >contact@digitalnexusai.com</span
+              >
+            </p>
+            <p class="footer__container-text">
+              Phone:
+              <span class="footer__container-text-span">+1 (408) 661-0258</span>
+            </p>
+            <p class="footer__container-text">
+              Address:
+              <span class="footer__container-text-span"
+                >No. 25, 1st Main, NR Colony, Bangalore
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="footer__container">
+          <h4 class="footer__title footer__title-center">The Company</h4>
+          <ul class="footer__list">
+            <li class="footer__item footer__item-list">
+              <a class="footer__link" href="./index.html#product-showcase"
+                >Products</a
+              >
+            </li>
+            <li class="footer__item footer__item-list">
+              <a class="footer__link" href="./index.html#header-training"
+                >Services</a
+              >
+            </li>
+            <li class="footer__item footer__item-list">
+              <a class="footer__link" href="./coursepage.html">Courses</a>
+            </li>
+            <li class="footer__item footer__item-list">
+              <a class="footer__link" href="./index.html#meet-dna">About Us</a>
+            </li>
+            <li class="footer__item footer__item-list">
+              <a class="footer__link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__container">
+          <h4 class="footer__title footer__title-center">Legal Information</h4>
+          <ul class="footer__list">
+            <li class="footer__item footer__item-list">
+              <a class="footer__link" href="./terms.html">Terms of Service</a>
+            </li>
+            <li class="footer__item footer__item-list">
+              <a class="footer__link" href="./privacy.html">Privacy Policy</a>
+            </li>
+            <!-- <li class="footer__item footer__item-list"><a class="footer__link" href="#">Cookie Policy</a></li> -->
+            <li class="footer__item footer__item-list">
+              <a class="footer__link" href="./refund.html">Refund Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__container">
+          <h3 class="footer__title-main footer__title-main-newslatter">
+            Newsletter
+          </h3>
+          <p class="footer__text footer__text-newslatter">
+            Stay up-to-date with DNAs latest news and service offerings.
+          </p>
+          <div class="footer__form-group">
+            <form action="subscribe.php" method="post">
+              <input type="text" id="email" name="email" class="footer__input" placeholder="Enter your Email...">
+              <button class="footer__button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__bottom-text">
+          © Copyright 2024 DigitalNexusAI. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./tetimonial.js"></script>
+    <script src="./modal.js"></script>
+  </body>
+</html>

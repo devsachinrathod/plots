@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./Logo/DNA Logo symbol.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./cooursedetailspage-CertDS-style.css" />
+  <script defer src="./script-coursepage.js"></script>
+  <title>Digital Nexus AI</title>
+</head>
+
+<body>
+  <header class="course-details-header">
+        <button class="navigation__hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    <div class="man-nav-container">
+      <a href="./index.html" class="coursepage-logo-link">
+        <div class="logo"><span>DigitalNexusAI</span></div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="./coursepage.html" class="explore">Explore</a></li>
+          <!-- <li><a href="#">Scolarship</a></li> -->
+          <li><a href="./contact-admissions.html">Teach on DNA</a></li>
+          <li><a href="./index.html#meet-dna">About Us</a></li>
+          <li><a href="./quoteprice.html">Quote Price</a></li>
+        </ul>
+        <ul>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./register.html" class="register-btn">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="course-nav">
+      <a href="./index.html">Home</a><img src="./images/right-arrow.png" alt="arrow" /><a
+        href="./coursepage.html">Explore</a><img src="./images/right-arrow.png" alt="arrow" /><a
+        href="./cooursedetailspage-CertDS.html">Data Science</a>
+    </div>
+    <div class="course-details">
+      <div class="certds-course-image-bg course-details-header-img"></div>
+      <div class="course-description">
+        <div class="course-details-certificate">
+          <a target="_blank" href="documents/certificate.pdf">
+            <p class="course-details-certificate-text">
+              Completion Certificate
+            </p>
+          </a>
+        </div>
+        <div class="ratings">
+          <div class="stars">
+            <img src="./images/star-black.svg" slt="Star" />
+            <img src="./images/star-black.svg" slt="Star" />
+            <img src="./images/star-black.svg" slt="Star" />
+            <img src="./images/star-black.svg" slt="Star" />
+            <img src="./images/star-black.svg" slt="Star" />
+          </div>
+          <p class="rating-text">4.8 (128)</p>
+        </div>
+        <h1>Certified Data Science Course</h1>
+        <p class="course-description-text">
+          aligns with industry needs, covering AI. ML, Deep Learning, Computer
+          vision, NLP, Gen AI, and more.
+        </p>
+        <ul class="course-description-icons">
+          <li class="course-icon-book">8 Weeks</li>
+          <!-- <li class="course-icon-clock">6-month Duration</li> -->
+          <li class="course-icon-graph">Zero to Hero</li>
+        </ul>
+        <div class="course-description-footer">
+          <p>₹ 1,75,000</p>
+          <!-- <a href="#" class="course-description-btn">Buy Now</a> -->
+
+          <!-- <form>
+              <script
+                src="https://checkout.razorpay.com/v1/payment-button.js"
+                data-payment_button_id="pl_OFU28nPR1ccarb"
+                async
+              ></script>
+            </form> -->
+            <div class="course-description-btns">
+              <!-- <a href="#" class="buy">Buy Course</a>
+                -->
+                <form>
+                  <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_NzkGEm1ItPL2gt"
+                    async> </script>
+                </form>
+                <!-- <button class="quote">Quote price</button> -->
+                <div id="quoteModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close"></span>
+                    <h2>Quote your price</h2>
+                    <label for="offer">Your offer</label>
+                  <div class="input-wrapper">
+                    <input type="number" id="offer" placeholder="₹0">
+                  </div>
+                    <!-- Suggested offers -->
+                     <div class="modal-content-buttons">
+                      <button class="modal-form-button">₹ 19,199</button>
+                      <button class="modal-form-button">₹ 19,199</button>
+                      <button class="modal-form-button">₹ 19,199</button>
+                    </div>
+                    <!-- Textarea for additional notes -->
+                    <textarea rows="4" placeholder="Message (optional)" ></textarea>
+  
+                    <!-- Submit button -->
+                    <button class="modal-form-submit">Continue</button>
+  
+                    <!-- Link for how quote works -->
+                    <a href="./quoteprice.html" class="link">How quote work</a>
+                  </div>
+  
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="skills">
+      <h3>Skills you'll gain</h3>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>ML</li>
+        <li>Deep Learning</li>
+        <li>NLP</li>
+        <li>Gen AI</li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="course-content-instructor-bg">
+    <div class="course-content-instructor-wrapper">
+      <div class="course-content-instructor">
+        <div class="course-content-wrapper">
+          <h2>Course Outline</h2>
+          <ul class="course-content">
+            <li class="course-content-item">
+              <div class="course-content-intro">
+                <h3>Python Foundation</h3>
+              </div>
+              <ul class="course-content-details">
+                <li>Introduction to Python programming</li>
+                <li>Variables and data types</li>
+                <li>Control Flow</li>
+                <li>Data Structures in Python</li>
+                <li>String Manipulation</li>
+                <li>Classes and Objects, File handling</li>
+                <li>Packages, PIP</li>
+                <li>Pandas, Data Frames</li>
+                <li>Coding Project: Employee Management System.</li>
+              </ul>
+            </li>
+            <li class="course-content-item">
+              <div class="course-content-intro">
+                <h3>Data Science Foundation</h3>
+              </div>
+              <ul class="course-content-details">
+                <li>What is Data Science?</li>
+                <li>Difference between AI. ML, Deep Learning</li>
+                <li>Mean, Median, Mode, Std Deviation</li>
+                <li>Distributions, CLT, Pareto, Confidence Intervals</li>
+                <li>Hypothesis Testing, Gradient Descent</li>
+                <li>Dimensionality Reduction, Overfitting, Underfitting</li>
+                <li>Univariate, Multivariate Analysis</li>
+                <li>Bayes Theorem, Z-Score, P-value, Skewness</li>
+                <li>T-Test, Chi-Squared Tests, Anova</li>
+                <li>Descriptive, Prescriptive and Predictive Analytics</li>
+                <li>
+                  Coding exercise: Data pre-processing of House Price
+                  Prediction
+                </li>
+              </ul>
+            </li>
+            <li class="course-content-item">
+              <div class="course-content-intro">
+                <h3>Machine Learning</h3>
+              </div>
+              <ul class="course-content-details">
+                <li>Introduction to Machine Learning</li>
+                <li>Supervised & Unsupervised Learning</li>
+                <li>Feature Engineering</li>
+                <li>Regression - Linear, Logistic, etc</li>
+                <li>Classification - Single and Multi-class</li>
+                <li>SVM, KNN, Naive Bayes,</li>
+                <li>Decision Tree, Random Forest, Ensemble</li>
+                <li>Optimization</li>
+                <li>K-Fold, Adaboost, XGBoost</li>
+                <li>Clustering - KMeans, DBScan, etc</li>
+                <li>
+                  Coding exercise 1: Text Classification with SVM, Random
+                  Forest, and KNN
+                </li>
+                <li>
+                  Coding exercise 2: Email spam detection using logistic
+                  regression
+                </li>
+              </ul>
+            </li>
+            <li class="course-content-item">
+              <div class="course-content-intro">
+                <h3>Deep Learning</h3>
+              </div>
+              <ul class="course-content-details">
+                <li>Introduction to Deep Learning</li>
+                <li>Artificial Neural Network</li>
+                <li>Perceptrons, Feed Forward, Backpropagation</li>
+                <li>Convolutional Neural Networks - CNN</li>
+                <li>Recurrent Neural Networks - RNN</li>
+                <li>Long Short Term Memory (LSTM), GRU</li>
+                <li>Association Rule Learning</li>
+                <li>Reinforcement Learning</li>
+                <li>Q-Learning, Policy-Based Learning</li>
+                <li>Coding exercise 1: Speech recognition project</li>
+                <li>Coding exercise 2: Stock Market prediction using RNN.</li>
+              </ul>
+            </li>
+            <li class="course-content-item">
+              <div class="course-content-intro">
+                <h3>Development Tools - VS Code, Git, Jupyter, etc.</h3>
+              </div>
+              <ul class="course-content-details">
+                <li>Programming environment for Data Science</li>
+                <li>Anaconda, Jupyter, Pycharm</li>
+                <li>Working with Jupyter notebook and Google Colab</li>
+                <li>Installing VS Code for AI/ML programming</li>
+                <li>Configuring and running applications in VS Code</li>
+                <li>Source Code Control - what is Git?</li>
+                <li>Git commands - Checkout, Push, Pull, Commit</li>
+                <li>Tagging, Branching, and Merging</li>
+                <li>Creating your first ML program repo in Git</li>
+                <li>Working in distributed teams in multinational companies</li>
+                <li>Coding Exercise: House Price Prediction ML Project using all the tools</li>
+              </ul>
+            </li>
+            <li class="course-content-item">
+              <div class="course-content-intro">
+                <h3>Computer Vision</h3>
+              </div>
+              <ul class="course-content-details">
+                <li>What is Computer Vision?</li>
+                <li>Image Classification</li>
+                <li>Use cases for Manufacturing, Healthcare, Hospitality</li>
+                <li>Face & Emotion Detection, Object Detection</li>
+                <li>Haar Cascade, MT-CNN, R-CNN</li>
+                <li>YOLO V4, 5, 6, 7, and more</li>
+                <li>D-Lib for face landmark detection</li>
+                <li>Racism & Terrorism Detection using Vgg-16 and more</li>
+                <li>Coding Exercise 1: Nervousness detection of candidates taking exam</li>
+                <li>Coding Exercise 2: Object detection for dangerous objects in Airports</li>
+              </ul>
+            </li>
+            <li class="course-content-item">
+              <div class="course-content-intro">
+                <h3>SQL For Data Science</h3>
+              </div>
+              <ul class="course-content-details">
+                <li>Relational Databases</li>
+                <li>NoSQL, GraphQL, Vector DB</li>
+                <li>Selects and Joins</li>
+                <li>Where clause, Group By, and more</li>
+                <li>Clustered and Non-clustered Indexes</li>
+                <li>Writing complex queries with Joins, conditions, subqueries</li>
+                <li>Coding Exercise: Generating Sales data forecast report</li>
+              </ul>
+            </li>
+            <li class="course-content-item">
+              <div class="course-content-intro">
+                <h3>Model deployment - flask API</h3>
+              </div>
+              <ul class="course-content-details">
+                <li>What is MLOps</li>
+                <li>Why is it important to learn deployment</li>
+                <li>How to deploy models on production?</li>
+                <li>Data Store and Model store</li>
+                <li>Weights, File formats, Pytorch, and more</li>
+                <li>Coding exercise: Build an ML model and deploy on AWS</li>
+              </ul>
+            </li>
+            <li class="course-content-item">
+              <div class="course-content-intro">
+                <h3>Tensorflow and Pytorch</h3>
+              </div>
+              <ul class="course-content-details">
+                <li>What is Tensorflow?</li>
+                <li>The Tensorflow Playground</li>
+                <li>Writing a CNN application using Tensorflow</li>
+                <li>Keras and Pytorch</li>
+                <li>How to create Pytorch models and deploy them</li>
+                <li>Coding Exercise: ML application using Tensorflow</li>
+              </ul>
+            </li>
+            <li class="course-content-item">
+              <div class="course-content-intro">
+                <h3>Generative AI</h3>
+              </div>
+              <ul class="course-content-details">
+                <li>Understanding the requirements</li>
+                <li>Steps to create your own chatbot</li>
+                <li>Designing the solution</li>
+                <li>Creating the chatbot using OpenAI and other LLMs</li>
+                <li>Creating additional features for your chatbot</li>
+                <li>Training your chatbot with your custom content</li>
+                <li>Feeding Excel sheets, transactional data from databases</li>
+                <li>Taking data from MySQL, SQL Server, Postgres</li>
+              </ul>
+            </li>
+            <li class="course-content-item">
+              <div class="course-content-intro">
+                <h3>Conclusion and Next Steps</h3>
+              </div>
+              <ul class="course-content-details">
+                <li>Quick recap</li>
+                <li>Summarizing what we learned</li>
+                <li>Where to go from here?</li>
+                <li>How to become an expert developer with an Internship</li>
+                <li>Next steps and action items</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="course-instructor">
+          <h2>Multi instructor Course</h2>
+
+          <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+          <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+
+          <ul id="instructors">
+            <li class="instructor-slide">
+              <img src="./images/instructors/benjamin-schoreder.jpg" alt="Benjamin Schoreder - US" />
+              <p class="instructor-slide-name">Benjamin Schroeder - US</p>
+              <p class="instructor-slide-about">
+                Experienced in the IT industry for more than 20 years, worked with top-rated multinational corporations,
+                navigated
+                cross-cultural environments, contributed to cutting-edge projects, and passionately mentored countless
+                students and
+                engineers using an innovative teaching approach.
+              </p>
+              <ul class="instructor-slide-links">
+                <li>
+                  <a href="https://www.linkedin.com/in/benjamin-schroeder-8bb5b6227/"><img
+                      src="./images/LinkedIn Circled.svg" alt="LinkedIn" /></a>
+                </li>
+                <!-- <li>
+                    <a href="#"
+                      ><img src="./images/Facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/Twitter Circled.svg" alt="Twitter"
+                    /></a>
+                  </li> -->
+              </ul>
+            </li>
+            <li class="instructor-slide">
+              <img src="./images/instructors/praveen-kumar.jpeg" alt="Praveen Kumar - India" />
+              <p class="instructor-slide-name">Praveen Kumar - India</p>
+              <p class="instructor-slide-about">
+                Experienced in the IT industry for more than 20 years, worked with top-rated multinational corporations,
+                navigated
+                cross-cultural environments, contributed to cutting-edge projects, and passionately mentored countless
+                students and
+                engineers using an innovative teaching approach.
+              </p>
+              <ul class="instructor-slide-links">
+                <li>
+                  <a href="https://www.linkedin.com/in/praveen-sprhava/"><img src="./images/LinkedIn Circled.svg"
+                      alt="LinkedIn" /></a>
+                </li>
+                <!-- <li>
+                    <a href="#"
+                      ><img src="./images/Facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/Twitter Circled.svg" alt="Twitter"
+                    /></a>
+                  </li> -->
+              </ul>
+            </li>
+            <li class="instructor-slide">
+              <img src="./images/instructors/manoj-joshi.jpeg" alt="Manoj Joshi - US" />
+              <p class="instructor-slide-name">Manoj Joshi - US</p>
+              <p class="instructor-slide-about">
+                Experienced in the IT industry for more than 20 years, worked with top-rated multinational corporations,
+                navigated
+                cross-cultural environments, contributed to cutting-edge projects, and passionately mentored countless
+                students and
+                engineers using an innovative teaching approach.
+              </p>
+              <ul class="instructor-slide-links">
+                <li>
+                  <a href="https://www.linkedin.com/in/manojjoshisj/"><img src="./images/LinkedIn Circled.svg"
+                      alt="LinkedIn" /></a>
+                </li>
+                <!-- <li>
+                    <a href="#"
+                      ><img src="./images/Facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/Twitter Circled.svg" alt="Twitter"
+                    /></a>
+                  </li> -->
+              </ul>
+            </li>
+            <li class="instructor-slide">
+              <img src="./images/instructors/santosh-pericharan.jpeg" alt="Santosh Pericharan - US" />
+              <p class="instructor-slide-name">Santosh Pericharan - US</p>
+              <p class="instructor-slide-about">
+                Experienced in the IT industry for more than 20 years, worked with top-rated multinational corporations,
+                navigated
+                cross-cultural environments, contributed to cutting-edge projects, and passionately mentored countless
+                students and
+                engineers using an innovative teaching approach.
+              </p>
+              <ul class="instructor-slide-links">
+                <li>
+                  <a href="https://www.linkedin.com/in/santosh-pericharan-9b79948/"><img
+                      src="./images/LinkedIn Circled.svg" alt="LinkedIn" /></a>
+                </li>
+                <!-- <li>
+                    <a href="#"
+                      ><img src="./images/Facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/Twitter Circled.svg" alt="Twitter"
+                    /></a>
+                  </li> -->
+              </ul>
+            </li>
+            <li class="instructor-slide">
+              <img src="./images/instructors/jonathan-enudeme.jpeg" alt="Jonathan Enudeme - Nigeria" />
+              <p class="instructor-slide-name">Jonathan Enudeme - Nigeria</p>
+              <p class="instructor-slide-about">
+                Experienced in the IT industry for more than 20 years, worked with top-rated multinational corporations,
+                navigated
+                cross-cultural environments, contributed to cutting-edge projects, and passionately mentored countless
+                students and
+                engineers using an innovative teaching approach.
+              </p>
+              <ul class="instructor-slide-links">
+                <li>
+                  <a href="https://www.linkedin.com/in/jonathan-enudeme/"><img src="./images/LinkedIn Circled.svg"
+                      alt="LinkedIn" /></a>
+                </li>
+                <!-- <li>
+                    <a href="#"
+                      ><img src="./images/Facebook.svg" alt="Facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./images/Twitter Circled.svg" alt="Twitter"
+                    /></a>
+                  </li> -->
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="body-2">
+    <div class="left">
+      <h2 class="heading">Course Description</h2>
+      Our comprehensive six-month instructor-led Certified Data Scientist
+      course aligns with industry needs, covering cutting-edge techniques and
+      essential concepts. It includes Deep Learning, Machine Learning, Python
+      Programming, Computer Vision, NLP, Generative AI, GAN, Reinforcement
+      Learning, and more. Engage in practical, hands-on learning with live
+      coding sessions and industry-relevant AI projects.
+    </div>
+    <div class="vertical-line"></div>
+    <div class="right">
+      <div class="heading-container">
+        <h2 class="heading">What you'll learn</h2>
+      </div>
+      <div>
+        1. You will gain proficiency in Python programming, foundational Data
+        Science principles, and essential statistical methodologies.
+      </div>
+      <div>
+        2. You will explore and gain hands-on experience in Supervised and
+        Unsupervised Learning, including techniques such as Regression,
+        Classification, Clustering, and more.
+      </div>
+      <div>
+        3. You will delve into neural network and deep learning concepts,
+        including CNN, RNN, LSTM, GRU, NLP, Computer Vision, and Generative
+        AI.
+      </div>
+      <div>
+        4. You will benefit from comprehensive interview preparation and
+        knowledge sessions, including resume reviews, mock interviews,
+        assignments.
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonial carousel Start  -->
+
+  <section>
+    <div class="bodyTestimonial">
+      <div class="carousel-image-container">
+        <h1 class="testimonial-heading">What our students say about the course</h1>
+      </div>
+      <div class="sadrzi-oba-kontejnera">
+        <div class="testimonial-carousel" id="testimonialCarousel">
+          <div class="testimonial-container" id="testimonialContainer"></div>
+          <button class="carousel-controlT left" id="prevButton">&#8592;</button>
+          <button class="carousel-controlT right" id="nextButton">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of Testimonial carousel -->
+
+  <footer class="footer">
+    <div class="footer__top wrapper">
+      <div class="footer__container">
+        <h3 class="footer__title-main">DigitalNexusAI</h3>
+        <p class="footer__text">
+          Remember, at Digital Nexus AI, we don’t just create; we innovate.
+        </p>
+        <ul class="footer__list footer__list-reversed">
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.facebook.com/people/Digitalnexusaidotcom/61562625252000/"
+              target="_blank"><img class="footer__social-network-image" src="./images/social-network-facebook.svg"
+                alt="Facebook" /></a>
+          </li>
+          <!-- <li class="footer__item"><a class="footer__link" href="#"><img class="footer__social-network-image" src="./images/social-network-x.svg" alt="X"></a></li> -->
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.instagram.com/digitalnexusaidotcom/" target="_blank"><img
+                class="footer__social-network-image" src="./images/social-network-instagram.svg" alt="Instagram" /></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.linkedin.com/company/digital-nexus-ai-com/" target="_blank"><img
+                class="footer__social-network-image" src="./images/social-network-linkedin.svg" alt="Linkedin" /></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.youtube.com/@digitalnexusai/" target="_blank"><img
+                class="footer__social-network-image-youtube" src="./images/social-network-youtube.svg"
+                alt="Youtube" /></a>
+          </li>
+        </ul>
+        <div class="footer__container-contact">
+          <h4 class="footer__container-title">Contact</h4>
+          <p class="footer__container-text">
+            Email:
+            <span class="footer__container-text-span">contact@digitalnexusai.com</span>
+          </p>
+          <p class="footer__container-text">
+            Phone:
+            <span class="footer__container-text-span">+1 (408) 661-0258</span>
+          </p>
+          <p class="footer__container-text">
+            Address:
+            <span class="footer__container-text-span">No. 25, 1st Main, NR Colony, Bangalore
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="footer__container">
+        <h4 class="footer__title footer__title-center">The Company</h4>
+        <ul class="footer__list">
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./index.html#product-showcase">Products</a>
+          </li>
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./index.html#header-training">Services</a>
+          </li>
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./coursepage.html">Courses</a>
+          </li>
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./index.html#meet-dna">About Us</a>
+          </li>
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__container">
+        <h4 class="footer__title footer__title-center">Legal Information</h4>
+        <ul class="footer__list">
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./terms.html">Terms of Service</a>
+          </li>
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./privacy.html">Privacy Policy</a>
+          </li>
+          <!-- <li class="footer__item footer__item-list"><a class="footer__link" href="#">Cookie Policy</a></li> -->
+          <li class="footer__item footer__item-list">
+            <a class="footer__link" href="./refund.html">Refund Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__container">
+        <h3 class="footer__title-main footer__title-main-newslatter">Newsletter</h3>
+        <p class="footer__text footer__text-newslatter">
+          Stay up-to-date with DNAs latest news and service offerings.
+        </p>
+        <div class="footer__form-group">
+          <form action="subscribe.php" method="post">
+            <input type="text" id="email" name="email" class="footer__input" placeholder="Enter your Email...">
+            <button class="footer__button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__bottom-text">
+        © Copyright 2024 DigitalNexusAI. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="./tetimonial.js"></script>
+  <script src="./modal.js"></script>
+</body>
+
+</html>

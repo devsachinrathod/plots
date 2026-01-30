@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up with Digital Nexus</title>
+    <link rel="icon" type="image/png" href="./Logo/DNA Logo symbol.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/7f85a56ba4.css"> -->
+    <link rel="stylesheet" href="styles-login.css">
+</head>
+
+<body>
+    <div class="register-container">
+        <div class="register-card">
+            <a href="index.html"><img src="./Logo/DNA Logo symbol.svg" alt="Company Logo" class="logo"></a>
+            <h2>Sign Up with Digital Nexus AI</h2>
+            <form method="POST" action="register">
+                <input type="text" class="input" id="fname" name="fname" placeholder="Full Name" required>
+                <small id="fname-error" class="text-danger"></small>
+
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <small id="email-error" class="text-danger"></small>
+
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <small id="password-error" class="text-danger"></small>
+
+                <input type="password" id="password2" name="password2" placeholder="Re-enter Password" required>
+                <small id="password2-error" class="text-danger"></small>
+
+                <!-- Radio buttons for role selection -->
+                <div class="role-selection">
+                    <span style="margin-right: 20px;">I am a</span> <!-- Introductory text before the radio buttons -->
+                    <input type="radio" id="trainer" name="role" value="Trainer" required>
+                    <label for="trainer">Trainer</label>
+                    <input type="radio" checked id="student" name="role" value="Student" required>
+                    <label for="student">Student</label>
+                </div>
+                <small id="role-error" class="text-danger"></small>
+
+                <!-- <a href="#" class="forgot-password"><i class="fas fa-key"></i> Partner with us</a> -->
+                <button type="submit" disabled>Register</button>
+                <p class="register">Already have an account? <a href="login.html">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="./validations.js"></script>
+
+</body>
+
+</html>
