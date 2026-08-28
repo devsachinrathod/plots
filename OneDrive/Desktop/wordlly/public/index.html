@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wordly — Learn 30 words a day</title>
+<meta name="description" content="A personal English vocabulary learning tool. 30 words a day, reviewed until they stick." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css" />
+<link rel="icon" type="image/png" href="./1338362.png">
+</head>
+<body>
+
+<div class="bg-texture" aria-hidden="true"></div>
+
+<div class="app-shell">
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand">
+        <span class="brand-mark">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4C9.5 2.6 6.5 2.6 4 4v14c2.5-1.4 5.5-1.4 8 0 2.5-1.4 5.5-1.4 8 0V4c-2.5-1.4-5.5-1.4-8 0Z"/><path d="M12 4v14"/></svg>
+        </span>
+        <span>Wordly</span>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <button class="nav-link active" data-view="dashboard">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.2 12 4l9 7.2"/><path d="M5 9.5V20h14V9.5"/></svg>
+          Dashboard
+        </button>
+        <button class="nav-link" data-view="today">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="16" rx="2.5"/><path d="M3.5 9.5h17"/><path d="M8 3v3M16 3v3"/></svg>
+          Today
+        </button>
+        <button class="nav-link" data-view="review">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13.66-5.66L20 8.5"/><path d="M20 4v4.5h-4.5"/><path d="M20 12a8 8 0 0 1-13.66 5.66L4 15.5"/><path d="M4 20v-4.5h4.5"/></svg>
+          Review
+        </button>
+        <button class="nav-link" data-view="grammar">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h9a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4Z"/><path d="M8 9h6M8 13h4"/><path d="M17 8h3v12h-2"/></svg>
+          Grammar
+        </button>
+        <button class="nav-link" data-view="vocabulary">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4C9.5 2.6 6.5 2.6 4 4v14c2.5-1.4 5.5-1.4 8 0 2.5-1.4 5.5-1.4 8 0V4c-2.5-1.4-5.5-1.4-8 0Z"/><path d="M12 4v14"/></svg>
+          Vocabulary
+        </button>
+      </nav>
+
+      <div class="navbar-actions">
+        <button class="icon-btn" id="notifBtn" aria-label="Notifications" aria-haspopup="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9a6 6 0 1 1 12 0c0 3.6 1 5.2 1.5 6H4.5C5 14.2 6 12.6 6 9Z"/><path d="M9.5 18a2.5 2.5 0 0 0 5 0"/></svg>
+          <span class="notif-dot hidden" id="notifDot"></span>
+        </button>
+        <button class="icon-btn hamburger" id="hamburgerBtn" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Notification panel -->
+    <div class="notif-panel" id="notifPanel">
+      <div class="notif-panel-head">Notifications</div>
+      <div class="notif-list" id="notifList"></div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav class="nav-links" id="navLinksMobile" style="flex-direction:column; align-items:stretch; gap:6px;">
+      <button class="nav-link active" data-view="dashboard">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.2 12 4l9 7.2"/><path d="M5 9.5V20h14V9.5"/></svg>
+        Dashboard
+      </button>
+      <button class="nav-link" data-view="today">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="16" rx="2.5"/><path d="M3.5 9.5h17"/><path d="M8 3v3M16 3v3"/></svg>
+        Today's Words
+      </button>
+      <button class="nav-link" data-view="review">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13.66-5.66L20 8.5"/><path d="M20 4v4.5h-4.5"/><path d="M20 12a8 8 0 0 1-13.66 5.66L4 15.5"/><path d="M4 20v-4.5h4.5"/></svg>
+        Review
+      </button>
+      <button class="nav-link" data-view="grammar">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h9a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4Z"/><path d="M8 9h6M8 13h4"/><path d="M17 8h3v12h-2"/></svg>
+        Grammar
+      </button>
+      <button class="nav-link" data-view="vocabulary">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4C9.5 2.6 6.5 2.6 4 4v14c2.5-1.4 5.5-1.4 8 0 2.5-1.4 5.5-1.4 8 0V4c-2.5-1.4-5.5-1.4-8 0Z"/><path d="M12 4v14"/></svg>
+        Vocabulary
+      </button>
+    </nav>
+  </div>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+    <div class="container">
+
+      <!-- ---------- DASHBOARD ---------- -->
+      <section class="view active" id="view-dashboard">
+        <div class="greeting-card">
+          <div class="greeting-decor" aria-hidden="true"></div>
+          <div class="greeting-top">
+            <div>
+              <h1 id="greetingText">Good morning 👋</h1>
+              <p class="sub">Ready to improve your English?</p>
+            </div>
+            <div class="streak-pill">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s5 4.5 5 9.5a5 5 0 0 1-10 0c0-1.2.5-2 1-2.7.3 1 1.2 1.7 2 1.2-.6-2 .3-4 2-5.5-.3 1.5 0 2.7 1 2.5C13.5 6.5 12 4.5 12 3Z"/></svg>
+              <span id="streakText">0 day streak</span>
+            </div>
+          </div>
+
+          <div class="progress-block">
+            <div class="progress-labels">
+              <span class="label">Today's progress</span>
+              <span class="count" id="progressCount">0 / 30</span>
+            </div>
+            <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+          </div>
+
+          <p class="motivation">Keep going. You're building your vocabulary one word at a time.</p>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-card">
+            <span class="stat-icon">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".7" fill="currentColor"/></svg>
+            </span>
+            <div>
+              <div class="stat-num" id="statRemaining">0</div>
+              <div class="stat-label">Words left today</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 0 1 13.66-5.66L20 8.5"/><path d="M20 4v4.5h-4.5"/><path d="M20 12a8 8 0 0 1-13.66 5.66L4 15.5"/><path d="M4 20v-4.5h4.5"/></svg>
+            </span>
+            <div>
+              <div class="stat-num" id="statReview">0</div>
+              <div class="stat-label">Need review</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4C9.5 2.6 6.5 2.6 4 4v14c2.5-1.4 5.5-1.4 8 0 2.5-1.4 5.5-1.4 8 0V4c-2.5-1.4-5.5-1.4-8 0Z"/><path d="M12 4v14"/></svg>
+            </span>
+            <div>
+              <div class="stat-num" id="statLearned">0</div>
+              <div class="stat-label">Total words learned</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-block" id="continueBlock" style="display:none;">
+          <div class="section-head"><h2>Continue learning</h2></div>
+          <div class="continue-card">
+            <div class="continue-word">
+              <div class="continue-badge" id="continueBadge">01</div>
+              <div>
+                <h3 id="continueWord">—</h3>
+                <span id="continueMeaning">—</span>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="continueBtn">
+              Continue
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="section-block">
+          <div class="section-head">
+            <h2>Today's words</h2>
+            <button class="link-btn nav-link" data-view="today" style="background:none; padding:0;">
+              See all
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+          <div id="dashboardWordPreview"></div>
+        </div>
+
+        <div class="section-block" id="dashReviewBlock" style="display:none;">
+          <div class="section-head">
+            <h2>Review words</h2>
+            <button class="link-btn nav-link" data-view="review" style="background:none; padding:0;">
+              See all
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+          <div class="review-list" id="dashboardReviewPreview"></div>
+        </div>
+      </section>
+
+      <!-- ---------- TODAY'S WORDS ---------- -->
+      <section class="view" id="view-today">
+        <div class="view-header">
+          <h1 id="todayHeading">Today's 30 words</h1>
+          <p>Tap a card for the full breakdown, or start Remember Mode to work through them one by one.</p>
+        </div>
+        <div class="section-head" style="margin-bottom:18px;">
+          <span class="vocab-count" id="todayCount">0 words</span>
+          <button class="btn btn-primary" id="startMemorizeBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18l15-9L5 3Z"/></svg>
+            Start Remember Mode
+          </button>
+        </div>
+        <div class="continue-card" id="nextDayBanner" style="display:none; margin-bottom:18px;">
+          <div class="continue-word">
+            <div class="continue-badge" id="nextDayIcon">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg>
+            </div>
+            <div>
+              <h3 id="nextDayTitle">Today's words are done 🎉</h3>
+              <span id="nextDaySubtitle">A new set is ready whenever you are.</span>
+            </div>
+          </div>
+          <button class="btn btn-primary" id="nextDayBtn"></button>
+        </div>
+        <div class="word-grid" id="todayWordGrid"></div>
+        <div class="empty-state" id="todayEmpty" style="display:none; margin-top:16px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12.5 11 14.5l4-4.5"/><circle cx="12" cy="12" r="9"/></svg>
+          <p class="title">All caught up for today</p>
+          <p class="sub">Come back tomorrow for your next 30 words.</p>
+        </div>
+      </section>
+
+      <!-- ---------- REVIEW ---------- -->
+      <section class="view" id="view-review">
+        <div class="view-header">
+          <h1>🔄 Review words</h1>
+          <p>These words need another look.</p>
+        </div>
+        <div class="review-list" id="reviewList"></div>
+        <div class="empty-state" id="reviewEmpty" style="display:none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12.5 11 14.5l4-4.5"/><circle cx="12" cy="12" r="9"/></svg>
+          <p class="title">Nothing to review</p>
+          <p class="sub">Words you mark "I forgot" will show up here.</p>
+        </div>
+      </section>
+
+      <!-- ---------- GRAMMAR ---------- -->
+      <section class="view" id="view-grammar">
+        <div class="view-header">
+          <h1>Grammar</h1>
+          <p>Short, clear lessons — each with rules and example sentences with their meaning.</p>
+        </div>
+
+        <div class="ai-generator">
+          <div class="ai-generator-icon">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="3.2"/></svg>
+          </div>
+          <input type="text" id="grammarTopicInput" placeholder="Ask AI for a lesson — e.g. Modal verbs, Passive voice, Conditionals..." autocomplete="off" />
+          <button class="btn btn-primary" id="grammarGenerateBtn">Generate with AI</button>
+        </div>
+
+        <div class="word-grid" id="grammarGrid" style="margin-top:20px;"></div>
+        <div class="empty-state" id="grammarEmpty" style="display:none; margin-top:16px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h9a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4Z"/><path d="M8 9h6M8 13h4"/></svg>
+          <p class="title">No grammar lessons yet</p>
+          <p class="sub">Ask the AI above for your first lesson.</p>
+        </div>
+      </section>
+
+      <!-- ---------- VOCABULARY / SEARCH ---------- -->
+      <section class="view" id="view-vocabulary">
+        <div class="view-header">
+          <h1>📖 My vocabulary</h1>
+          <p>Every word you've learned so far, all in one place.</p>
+        </div>
+        <div class="search-bar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="text" id="vocabSearch" placeholder="Search vocabulary..." autocomplete="off" />
+        </div>
+        <div class="vocab-count" id="vocabCount">0 words learned</div>
+        <div class="word-grid" id="vocabGrid"></div>
+        <div class="empty-state" id="vocabEmpty" style="display:none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <p class="title">No words yet</p>
+          <p class="sub">Learned words will appear here as you go.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>
+
+<!-- ============ WORD DETAIL MODAL ============ -->
+<div class="modal-overlay" id="wordModal">
+  <div class="modal-card" id="modalCard" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <div class="modal-eyebrow" id="modalEyebrow">Word</div>
+    <h2 id="modalWord">—</h2>
+    <p class="modal-pron" id="modalPron">—</p>
+
+    <button class="btn btn-ghost modal-listen" id="modalListenBtn">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg>
+      Listen
+    </button>
+
+    <div class="modal-row">
+      <div class="row-label">Meaning</div>
+      <div class="row-value" id="modalMeaning">—</div>
+    </div>
+    <div class="modal-row">
+      <div class="row-label">Hindi meaning</div>
+      <div class="row-value hindi" id="modalHindi">—</div>
+    </div>
+    <div class="modal-row">
+      <div class="row-label">Example</div>
+      <div class="row-value example" id="modalExample">—</div>
+    </div>
+    <div class="modal-row" id="modalExampleMeaningRow" style="display:none;">
+      <div class="row-label">Sentence meaning</div>
+      <div class="row-value hindi" id="modalExampleMeaning">—</div>
+    </div>
+
+    <div class="modal-trick">
+      <div class="row-label">💡 Memory trick</div>
+      <div class="row-value" id="modalTrick">—</div>
+    </div>
+
+    <div class="modal-actions" id="modalActions"></div>
+  </div>
+</div>
+
+<!-- ============ GRAMMAR DETAIL MODAL ============ -->
+<div class="modal-overlay" id="grammarModal">
+  <div class="modal-card modal-card-wide" id="grammarModalCard" role="dialog" aria-modal="true">
+    <button class="modal-close" id="grammarModalClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <div class="modal-eyebrow" id="grammarModalCategory">Grammar</div>
+    <h2 id="grammarModalTitle">—</h2>
+    <p class="row-value" style="margin-bottom:20px; color:var(--ink-soft);" id="grammarModalExplanation">—</p>
+
+    <div class="modal-row">
+      <div class="row-label">Rules</div>
+      <ul class="rule-list" id="grammarModalRules"></ul>
+    </div>
+
+    <div class="modal-row" style="margin-bottom:0;">
+      <div class="row-label">Examples</div>
+      <div class="example-list" id="grammarModalExamples"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MEMORIZE MODE ============ -->
+<div class="memorize-overlay" id="memorizeOverlay">
+  <div class="memorize-top">
+    <span class="memorize-progress-text" id="memProgressText">Word 1 of 30</span>
+    <button class="icon-btn" id="memCloseBtn" aria-label="Exit Remember Mode">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="memorize-body">
+    <div class="mem-card" id="memCard">
+      <div class="mem-hidden" id="memQuestionBlock">
+        <p class="mem-prompt">What does this word mean?</p>
+        <h2 class="mem-word" id="memWord">—</h2>
+        <svg class="mem-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.7-2.5 2-2.5 4"/><path d="M12 16.2h.01"/></svg>
+        <button class="btn btn-primary btn-lg" id="revealBtn">Reveal meaning</button>
+      </div>
+
+      <div class="mem-reveal" id="memRevealBlock">
+        <p class="mem-prompt" style="text-align:center;" id="memRevealWord">—</p>
+        <div class="row-label">Meaning</div>
+        <div class="row-value" id="memMeaning">—</div>
+        <div class="row-label">Hindi meaning</div>
+        <div class="row-value" id="memHindi">—</div>
+        <p class="mem-question">Did you remember it?</p>
+        <div class="mem-actions">
+          <button class="btn btn-primary" id="memYesBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg>
+            Yes, I remembered
+          </button>
+          <button class="btn btn-ghost" id="memNoBtn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+            I forgot
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4 10-10"/></svg>
+  <span id="toastText">Saved</span>
+</div>
+
+<script src="/js/api.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
